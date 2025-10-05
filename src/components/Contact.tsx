@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Printer, Calendar, Languages, Globe } from "lucide-react";
-import officeImage from "@/assets/office-building.jpg";
+import officeImage from "@/assets/office-interior.jpg";
 const Contact = () => {
   return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
