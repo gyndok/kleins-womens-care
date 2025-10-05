@@ -25,7 +25,6 @@ const Services = () => {
       services: [
         "Robotic Assisted Surgery",
         "Total Laparoscopic Hysterectomy",
-        "Myomectomy",
         "Endometrial Ablation",
         "Tubal Ligation",
         "Diagnostic Hysteroscopy",
