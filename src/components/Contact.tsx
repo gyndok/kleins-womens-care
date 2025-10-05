@@ -2,10 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Printer, Calendar, Languages, Globe } from "lucide-react";
 import officeImage from "@/assets/office-interior.jpg";
-
 const Contact = () => {
-  return (
-    <section className="py-20 bg-background">
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -16,11 +14,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="shadow-[var(--card-shadow)] overflow-hidden">
               <div className="h-48 overflow-hidden">
-                <img 
-                  src={officeImage} 
-                  alt="Office interior"
-                  className="w-full h-full object-cover"
-                />
+                <img src={officeImage} alt="Office interior" className="w-full h-full object-cover" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-semibold mb-4 text-foreground">
@@ -71,43 +65,11 @@ const Contact = () => {
 
             <div className="space-y-6">
               <Card className="shadow-[var(--card-shadow)] bg-gradient-to-br from-primary to-secondary text-primary-foreground">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-semibold mb-4">Schedule an Appointment</h3>
-                  <p className="mb-6 opacity-90">
-                    Dr. Klein is currently accepting new patients. Contact our office to schedule your appointment today.
-                  </p>
-                  <div className="space-y-3">
-                    <Button 
-                      size="lg" 
-                      className="w-full bg-white text-primary hover:bg-white/90"
-                    >
-                      <Calendar className="mr-2 h-5 w-5" />
-                      Book Appointment Online
-                    </Button>
-                    <Button 
-                      size="lg" 
-                      variant="outline"
-                      className="w-full border-2 border-white text-white hover:bg-white hover:text-primary"
-                    >
-                      <Phone className="mr-2 h-5 w-5" />
-                      Call (281) 557-0300
-                    </Button>
-                  </div>
-                </CardContent>
+                
               </Card>
 
               <Card className="shadow-[var(--card-shadow)]">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-3">
-                    <Globe className="h-5 w-5 text-secondary mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold mb-2 text-foreground">Telehealth Available</h4>
-                      <p className="text-sm text-muted-foreground">
-                        Dr. Klein is now offering telehealth visits for your convenience. Ask about virtual appointments when you call.
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
+                
               </Card>
 
               <Card className="shadow-[var(--card-shadow)]">
@@ -122,8 +84,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
