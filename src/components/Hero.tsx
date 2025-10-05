@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 flex items-center justify-end pr-8">
         <img 
           src={heroImage} 
-          alt="Dr. Geffrey H. Klein" 
+          alt="Dr. Geffrey H. Klein, board-certified OBGYN and obesity medicine specialist in Clear Lake, Texas" 
           className="h-full object-contain mix-blend-overlay opacity-30" 
         />
       </div>
