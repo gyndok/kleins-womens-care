@@ -82,10 +82,13 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-[var(--card-shadow)]">
+              <Card className="shadow-[var(--card-shadow)] bg-primary/5 border-primary/20">
                 <CardContent className="p-6">
-                  <h4 className="font-semibold mb-3 text-foreground text-xl">New Patient Forms</h4>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Calendar className="h-6 w-6 text-primary" />
+                    <h4 className="font-semibold text-foreground text-xl">New Patient Forms</h4>
+                  </div>
+                  <p className="text-base text-foreground mb-5 font-medium">
                     Please fill out the appropriate form below. Once submitted, our staff will contact you to schedule your appointment.
                   </p>
                   <div className="space-y-3">
@@ -95,7 +98,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className="block"
                     >
-                      <Button variant="outline" className="w-full justify-start">
+                      <Button variant="default" className="w-full justify-start text-base h-12">
                         Obesity Clinic Intake Form
                       </Button>
                     </a>
@@ -105,7 +108,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className="block"
                     >
-                      <Button variant="outline" className="w-full justify-start">
+                      <Button variant="default" className="w-full justify-start text-base h-12">
                         New Obstetrical Patient Database
                       </Button>
                     </a>
@@ -115,7 +118,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className="block"
                     >
-                      <Button variant="outline" className="w-full justify-start">
+                      <Button variant="default" className="w-full justify-start text-base h-12">
                         New Gyn Patient
                       </Button>
                     </a>
