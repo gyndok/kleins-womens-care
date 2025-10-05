@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Calendar } from "lucide-react";
+import { Phone, Calendar, Users } from "lucide-react";
 import heroImage from "@/assets/doctor-hero.jpg";
 const Hero = () => {
   return <section className="relative min-h-[600px] flex items-center overflow-hidden">
@@ -26,8 +26,15 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            
-            
+            <Button 
+              size="lg" 
+              variant="secondary"
+              className="gap-2"
+              onClick={() => window.open('https://www.facebook.com/groups/64781863202', '_blank')}
+            >
+              <Users className="h-5 w-5" />
+              Join Our Facebook Group
+            </Button>
           </div>
         </div>
       </div>
