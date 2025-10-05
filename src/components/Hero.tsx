@@ -27,10 +27,7 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4">
             
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary">
-              <Phone className="mr-2 h-5 w-5" />
-              (281) 557-0300
-            </Button>
+            
           </div>
         </div>
       </div>
