@@ -1,17 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Calendar } from "lucide-react";
 import heroImage from "@/assets/doctor-hero.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-[600px] flex items-center overflow-hidden">
-      <div className="absolute inset-0 opacity-95" style={{ background: 'var(--hero-gradient)' }} />
+  return <section className="relative min-h-[600px] flex items-center overflow-hidden">
+      <div className="absolute inset-0 opacity-95" style={{
+      background: 'var(--hero-gradient)'
+    }} />
       <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="Dr. Geffrey H. Klein"
-          className="w-full h-full object-cover mix-blend-overlay opacity-30"
-        />
+        <img src={heroImage} alt="Dr. Geffrey H. Klein" className="w-full h-full object-cover mix-blend-overlay opacity-30" />
       </div>
       
       <div className="container mx-auto px-4 py-20 relative z-10">
@@ -27,27 +23,14 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              size="lg" 
-              variant="secondary"
-              className="bg-white text-primary hover:bg-white/90 shadow-lg"
-            >
-              <Calendar className="mr-2 h-5 w-5" />
-              Book Appointment
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary"
-            >
+            
+            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary">
               <Phone className="mr-2 h-5 w-5" />
               (281) 557-0300
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
