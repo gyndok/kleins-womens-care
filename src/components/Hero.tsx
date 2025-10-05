@@ -6,8 +6,12 @@ const Hero = () => {
       <div className="absolute inset-0 opacity-95" style={{
       background: 'var(--hero-gradient)'
     }} />
-      <div className="absolute inset-0">
-        <img src={heroImage} alt="Dr. Geffrey H. Klein" className="w-full h-full object-cover mix-blend-overlay opacity-30" style={{ objectPosition: 'center 35%' }} />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <img 
+          src={heroImage} 
+          alt="Dr. Geffrey H. Klein" 
+          className="h-full object-contain mix-blend-overlay opacity-30" 
+        />
       </div>
       
       <div className="container mx-auto px-4 py-20 relative z-10">
