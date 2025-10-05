@@ -1,9 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Stethoscope, Heart, Award } from "lucide-react";
-
 const About = () => {
-  return (
-    <section className="py-20 bg-gradient-to-b from-background to-muted/30">
+  return <section className="py-20 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -28,11 +26,7 @@ const About = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     He is Board Certified with the American Board of Obstetrics and Gynecology and is a Fellow of the American College of Obstetricians and Gynecologists. Dr. Klein has special interests in robotic surgery, challenging obstetrical cases, and general office gynecology.
                   </p>
-                  <div className="mt-6 p-4 bg-secondary/10 rounded-lg border-l-4 border-secondary">
-                    <p className="text-sm text-muted-foreground italic">
-                      This physician is accepting telehealth visits.
-                    </p>
-                  </div>
+                  
                 </div>
               </div>
             </CardContent>
@@ -58,8 +52,6 @@ const About = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
