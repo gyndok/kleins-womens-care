@@ -1,0 +1,129 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { MapPin, Phone, Printer, Calendar, Languages, Globe } from "lucide-react";
+import officeImage from "@/assets/office-interior.jpg";
+
+const Contact = () => {
+  return (
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-4">Contact & Location</h2>
+            <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="shadow-[var(--card-shadow)] overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={officeImage} 
+                  alt="Office interior"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                  Women's Specialists of Clear Lake
+                </h3>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="font-medium text-foreground">Office Address</p>
+                      <p className="text-sm text-muted-foreground">
+                        400 Medical Center Blvd, Suite 300<br />
+                        Webster, TX 77598
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="font-medium text-foreground">Phone</p>
+                      <p className="text-sm text-muted-foreground">(281) 557-0300</p>
+                      <p className="text-xs text-muted-foreground italic mt-1">
+                        *Please call if you are a self-pay patient
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Printer className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="font-medium text-foreground">Fax</p>
+                      <p className="text-sm text-muted-foreground">(281) 557-3301</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <Languages className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="font-medium text-foreground">Languages</p>
+                      <p className="text-sm text-muted-foreground">English, Spanish</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="space-y-6">
+              <Card className="shadow-[var(--card-shadow)] bg-gradient-to-br from-primary to-secondary text-primary-foreground">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-semibold mb-4">Schedule an Appointment</h3>
+                  <p className="mb-6 opacity-90">
+                    Dr. Klein is currently accepting new patients. Contact our office to schedule your appointment today.
+                  </p>
+                  <div className="space-y-3">
+                    <Button 
+                      size="lg" 
+                      className="w-full bg-white text-primary hover:bg-white/90"
+                    >
+                      <Calendar className="mr-2 h-5 w-5" />
+                      Book Appointment Online
+                    </Button>
+                    <Button 
+                      size="lg" 
+                      variant="outline"
+                      className="w-full border-2 border-white text-white hover:bg-white hover:text-primary"
+                    >
+                      <Phone className="mr-2 h-5 w-5" />
+                      Call (281) 557-0300
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-[var(--card-shadow)]">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-3">
+                    <Globe className="h-5 w-5 text-secondary mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold mb-2 text-foreground">Telehealth Available</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Dr. Klein is now offering telehealth visits for your convenience. Ask about virtual appointments when you call.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-[var(--card-shadow)]">
+                <CardContent className="p-6">
+                  <h4 className="font-semibold mb-3 text-foreground">Office Hours</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Please contact our office for current office hours and availability.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
