@@ -64,10 +64,21 @@ const Contact = () => {
             <div className="space-y-6">
               <Card className="shadow-[var(--card-shadow)]">
                 <CardContent className="p-6">
-                  <h4 className="font-semibold mb-3 text-foreground">Office Hours</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Please contact our office for current office hours and availability.
-                  </p>
+                  <h4 className="font-semibold mb-3 text-foreground text-xl">Office Hours</h4>
+                  <div className="space-y-2 text-base text-muted-foreground">
+                    <div className="flex justify-between">
+                      <span className="font-medium">Monday - Thursday:</span>
+                      <span>8:30 AM - 11:00 AM, 1:30 PM - 4:00 PM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="font-medium">Friday:</span>
+                      <span>8:30 AM - 11:00 AM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="font-medium">Saturday - Sunday:</span>
+                      <span>Closed</span>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </div>
