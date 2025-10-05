@@ -81,15 +81,15 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <header className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-4">Services & Procedures</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive obstetric and gynecologic care with expertise in robotic surgery and high-risk cases
           </p>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-4" />
-        </div>
+        </header>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {serviceCategories.map((category, index) => {

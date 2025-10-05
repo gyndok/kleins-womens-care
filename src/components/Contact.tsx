@@ -3,17 +3,21 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Printer, Calendar, Languages, Globe } from "lucide-react";
 import officeImage from "@/assets/office-interior.jpg";
 const Contact = () => {
-  return <section className="py-20 bg-background">
+  return <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <header className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">Contact & Location</h2>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
-          </div>
+          </header>
 
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="shadow-[var(--card-shadow)] overflow-hidden">
-              
+              <img 
+                src={officeImage} 
+                alt="Women's Specialists of Clear Lake medical office interior in Webster, Texas" 
+                className="w-full h-48 object-cover"
+              />
               <CardContent className="p-6">
                 <h3 className="text-2xl font-semibold mb-4 text-foreground">
                   Women's Specialists of Clear Lake

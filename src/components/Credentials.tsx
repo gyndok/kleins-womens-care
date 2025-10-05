@@ -3,13 +3,13 @@ import { GraduationCap, Award, Building2, CheckCircle } from "lucide-react";
 
 const Credentials = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-muted/30 to-background">
+    <section id="credentials" className="py-20 bg-gradient-to-b from-muted/30 to-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
+          <header className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">Credentials & Education</h2>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
-          </div>
+          </header>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <Card className="shadow-[var(--card-shadow)]">

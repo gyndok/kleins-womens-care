@@ -1,13 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Stethoscope, Heart, Award } from "lucide-react";
 const About = () => {
-  return <section className="py-20 bg-gradient-to-b from-background to-muted/30">
+  return <section id="about" className="py-20 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
+          <header className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">About Dr. Klein</h2>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
-          </div>
+          </header>
           
           <Card className="mb-8 shadow-[var(--card-shadow)] transition-shadow hover:shadow-[var(--card-hover-shadow)]">
             <CardContent className="p-8">

@@ -41,9 +41,9 @@ const PatientEducation = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section id="education" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <header className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="p-2 bg-primary/10 rounded-lg">
               <Video className="h-8 w-8 text-primary" />
@@ -54,7 +54,7 @@ const PatientEducation = () => {
             Educational resources to help you understand your care
           </p>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-4" />
-        </div>
+        </header>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {videos.map((video) => (
