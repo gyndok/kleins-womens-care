@@ -81,6 +81,47 @@ const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
+
+              <Card className="shadow-[var(--card-shadow)]">
+                <CardContent className="p-6">
+                  <h4 className="font-semibold mb-3 text-foreground text-xl">New Patient Forms</h4>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Please fill out the appropriate form below. Once submitted, our staff will contact you to schedule your appointment.
+                  </p>
+                  <div className="space-y-3">
+                    <a 
+                      href="https://intakeq.com/new/k3r67k" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <Button variant="outline" className="w-full justify-start">
+                        Obesity Clinic Intake Form
+                      </Button>
+                    </a>
+                    <a 
+                      href="https://intakeq.com/new/vplnkm" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <Button variant="outline" className="w-full justify-start">
+                        New Obstetrical Patient Database
+                      </Button>
+                    </a>
+                    <a 
+                      href="https://intakeq.com/new/6nzzu9" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <Button variant="outline" className="w-full justify-start">
+                        New Gyn Patient
+                      </Button>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
