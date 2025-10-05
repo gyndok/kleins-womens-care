@@ -30,10 +30,12 @@ const Hero = () => {
               size="lg" 
               variant="secondary"
               className="gap-2"
-              onClick={() => window.open('https://www.facebook.com/groups/64781863202', '_blank')}
+              asChild
             >
-              <Users className="h-5 w-5" />
-              Join Our Facebook Group
+              <a href="https://www.facebook.com/groups/64781863202" target="_blank" rel="noopener noreferrer">
+                <Users className="h-5 w-5" />
+                Join Our Facebook Group
+              </a>
             </Button>
           </div>
         </div>
