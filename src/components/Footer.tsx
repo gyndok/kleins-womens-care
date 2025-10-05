@@ -1,6 +1,5 @@
 const Footer = () => {
-  return (
-    <footer className="bg-foreground text-background py-8">
+  return <footer className="bg-foreground text-background py-8">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <p className="text-sm mb-2">
@@ -13,14 +12,10 @@ const Footer = () => {
             Phone: (281) 557-0300 | Fax: (281) 557-3301
           </p>
           <div className="border-t border-background/20 pt-4 mt-4">
-            <p className="text-xs opacity-75">
-              Copyright 1999-2025 C-HCA, Inc. | All rights reserved.
-            </p>
+            
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
