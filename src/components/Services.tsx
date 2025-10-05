@@ -75,9 +75,6 @@ const Services = () => {
       color: "text-secondary",
       services: [
         "Cervical Cancer Screening",
-        "Ovarian Cancer Care",
-        "Uterine Cancer Management",
-        "Endometrial Cancer",
         "Biopsy Procedures"
       ]
     }
