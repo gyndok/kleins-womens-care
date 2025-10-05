@@ -71,7 +71,7 @@ const Services = () => {
     },
     {
       icon: Shield,
-      title: "Cancer Screening & Care",
+      title: "Cancer Screening",
       color: "text-secondary",
       services: [
         "Cervical Cancer Screening",
