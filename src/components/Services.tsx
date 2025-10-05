@@ -40,7 +40,6 @@ const Services = () => {
         "Pap Smear",
         "Pelvic Exam",
         "Mammography Screening",
-        "Bone Density X-Ray",
         "Hormone Replacement Therapy",
         "Menopausal Disorders",
         "Osteoporosis Management"
