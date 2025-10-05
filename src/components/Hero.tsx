@@ -7,7 +7,7 @@ const Hero = () => {
       background: 'var(--hero-gradient)'
     }} />
       <div className="absolute inset-0">
-        <img src={heroImage} alt="Dr. Geffrey H. Klein" className="w-full h-full object-cover object-top mix-blend-overlay opacity-30" />
+        <img src={heroImage} alt="Dr. Geffrey H. Klein" className="w-full h-full object-cover object-center mix-blend-overlay opacity-30" />
       </div>
       
       <div className="container mx-auto px-4 py-20 relative z-10">
