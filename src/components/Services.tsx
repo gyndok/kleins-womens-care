@@ -15,9 +15,7 @@ const Services = () => {
         "Cesarean Section (C-section)",
         "Multiple Gestation",
         "Postpartum Care",
-        "Genetic Counseling",
-        "Amniocentesis",
-        "Fetal Procedures"
+        "Genetic Counseling"
       ]
     },
     {
