@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Printer, Calendar, Languages, Globe } from "lucide-react";
-import officeImage from "@/assets/office-interior.jpg";
+import officeImage from "@/assets/office-building.jpg";
 const Contact = () => {
   return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -14,7 +14,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="shadow-[var(--card-shadow)] overflow-hidden">
               <div className="h-48 overflow-hidden">
-                <img src={officeImage} alt="Office interior" className="w-full h-full object-cover" />
+                <img src={officeImage} alt="Women's Specialists of Clear Lake medical office building" className="w-full h-full object-cover" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-semibold mb-4 text-foreground">
