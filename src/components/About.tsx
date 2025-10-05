@@ -23,8 +23,11 @@ const About = () => {
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     Dr. Klein graduated with honors from the University of Texas at Austin with a Bachelor of Arts in Biology. During his time at Baylor College of Medicine, he received several prestigious honors including the Southern Medical Association Scholarship, Honors in the Basic Sciences, Alpha Omega Alpha membership, and the Outstanding Medical Student in Obstetrics and Gynecology award.
                   </p>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed mb-4">
                     He is Board Certified with the American Board of Obstetrics and Gynecology and is a Fellow of the American College of Obstetricians and Gynecologists. Dr. Klein has special interests in robotic surgery, challenging obstetrical cases, and general office gynecology.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Dr. Klein is also Board Certified with the American Board of Obesity Medicine and prescribes anti-obesity medication to help patients achieve their health goals.
                   </p>
                   
                 </div>
