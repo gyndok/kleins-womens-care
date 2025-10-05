@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="absolute inset-0 opacity-95" style={{
       background: 'var(--hero-gradient)'
     }} />
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-end pr-8">
         <img 
           src={heroImage} 
           alt="Dr. Geffrey H. Klein" 
