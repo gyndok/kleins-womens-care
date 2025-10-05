@@ -66,9 +66,7 @@ const Services = () => {
         "Uterine Fibroid Procedures",
         "Cervical Dysplasia Treatment",
         "Urinary Incontinence",
-        "Pelvic Organ Prolapse",
-        "STD Testing & Treatment",
-        "Urodynamics"
+        "STD Testing & Treatment"
       ]
     },
     {
