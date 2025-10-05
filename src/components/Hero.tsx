@@ -5,7 +5,7 @@ import heroImage from "@/assets/doctor-hero.jpg";
 const Hero = () => {
   return (
     <section className="relative min-h-[600px] flex items-center overflow-hidden">
-      <div className="absolute inset-0 bg-[var(--hero-gradient)] opacity-95" />
+      <div className="absolute inset-0 opacity-95" style={{ background: 'var(--hero-gradient)' }} />
       <div className="absolute inset-0">
         <img 
           src={heroImage} 
