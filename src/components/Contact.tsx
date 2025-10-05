@@ -64,14 +64,6 @@ const Contact = () => {
             </Card>
 
             <div className="space-y-6">
-              <Card className="shadow-[var(--card-shadow)] bg-gradient-to-br from-primary to-secondary text-primary-foreground">
-                
-              </Card>
-
-              <Card className="shadow-[var(--card-shadow)]">
-                
-              </Card>
-
               <Card className="shadow-[var(--card-shadow)]">
                 <CardContent className="p-6">
                   <h4 className="font-semibold mb-3 text-foreground">Office Hours</h4>
