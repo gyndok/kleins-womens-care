@@ -18,6 +18,9 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-3">
             Board Certified Obstetrics and Gynecology
           </p>
+          <p className="text-xl md:text-2xl text-primary-foreground/90 mb-3">
+            Board Certified Obesity Medicine
+          </p>
           <p className="text-lg text-primary-foreground/80 mb-8 italic">
             Taking care of women through all stages of life
           </p>
