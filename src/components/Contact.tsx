@@ -24,10 +24,15 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Office Address</p>
-                      <p className="text-sm text-muted-foreground">
+                      <a 
+                        href="https://www.google.com/maps/search/?api=1&query=400+Medical+Center+Blvd+Suite+300+Webster+TX+77598" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-muted-foreground hover:text-primary transition-colors underline"
+                      >
                         400 Medical Center Blvd, Suite 300<br />
                         Webster, TX 77598
-                      </p>
+                      </a>
                     </div>
                   </div>
 
