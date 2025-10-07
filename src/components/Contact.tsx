@@ -13,11 +13,7 @@ const Contact = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="shadow-[var(--card-shadow)] overflow-hidden">
-              <img 
-                src={officeImage} 
-                alt="Women's Specialists of Clear Lake medical office interior in Webster, Texas" 
-                className="w-full h-48 object-cover"
-              />
+              
               <CardContent className="p-6">
                 <h3 className="text-2xl font-semibold mb-4 text-foreground">
                   Women's Specialists of Clear Lake
@@ -96,32 +92,17 @@ const Contact = () => {
                     Please fill out the appropriate form below. Once submitted, our staff will contact you to schedule your appointment.
                   </p>
                   <div className="space-y-3">
-                    <a 
-                      href="https://intakeq.com/new/k3r67k" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="block"
-                    >
+                    <a href="https://intakeq.com/new/k3r67k" target="_blank" rel="noopener noreferrer" className="block">
                       <Button variant="default" className="w-full justify-start text-base h-12">
                         Obesity Clinic Intake Form
                       </Button>
                     </a>
-                    <a 
-                      href="https://intakeq.com/new/vplnkm" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="block"
-                    >
+                    <a href="https://intakeq.com/new/vplnkm" target="_blank" rel="noopener noreferrer" className="block">
                       <Button variant="default" className="w-full justify-start text-base h-12">
                         New Obstetrical Patient Database
                       </Button>
                     </a>
-                    <a 
-                      href="https://intakeq.com/new/6nzzu9" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="block"
-                    >
+                    <a href="https://intakeq.com/new/6nzzu9" target="_blank" rel="noopener noreferrer" className="block">
                       <Button variant="default" className="w-full justify-start text-base h-12">
                         New Gyn Patient
                       </Button>
