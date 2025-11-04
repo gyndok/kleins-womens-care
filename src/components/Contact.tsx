@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Printer, Calendar, Languages, Globe } from "lucide-react";
 import officeImage from "@/assets/office-interior.jpg";
+import AppointmentForm from "./AppointmentForm";
 const Contact = () => {
   return <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -11,7 +12,9 @@ const Contact = () => {
             <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
           </header>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8">
+            <AppointmentForm />
+
             <Card className="shadow-[var(--card-shadow)] overflow-hidden">
               
               <CardContent className="p-6">
