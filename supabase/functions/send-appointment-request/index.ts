@@ -32,11 +32,11 @@ const handler = async (req: Request): Promise<Response> => {
       email: appointmentData.email 
     });
 
-    // Send email to the doctor - IMPORTANT: Replace with your actual email address
+    // Send email to the doctor
     const emailResponse = await resend.emails.send({
       from: "Appointment Requests <onboarding@resend.dev>",
-      to: ["your-email@example.com"], // TODO: Replace with your actual email
-      subject: `New Appointment Request from ${appointmentData.name}`,
+      to: ["gyndok@yahoo.com"],
+      subject: "New patient request",
       html: `
         <h2>New Appointment Request</h2>
         <p><strong>Patient Type:</strong> ${appointmentData.isNewPatient ? 'New Patient' : 'Existing Patient'}</p>
