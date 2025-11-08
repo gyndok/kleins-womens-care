@@ -16,7 +16,7 @@ const Index = () => {
       <Services />
       <section id="appointment" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <AppointmentForm />
           </div>
         </div>
