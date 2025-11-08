@@ -1,8 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Printer, Calendar, Languages, Globe } from "lucide-react";
-import officeImage from "@/assets/office-interior.jpg";
-import AppointmentForm from "./AppointmentForm";
+import { MapPin, Phone, Printer, Calendar, Languages } from "lucide-react";
 const Contact = () => {
   return <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -13,8 +11,6 @@ const Contact = () => {
           </header>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            <AppointmentForm />
-
             <Card className="shadow-[var(--card-shadow)] overflow-hidden">
               
               <CardContent className="p-6">

@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import AppointmentForm from "@/components/AppointmentForm";
 import PatientEducation from "@/components/PatientEducation";
 import Credentials from "@/components/Credentials";
 import Reviews from "@/components/Reviews";
@@ -13,6 +14,13 @@ const Index = () => {
       <Hero />
       <About />
       <Services />
+      <section id="appointment" className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto">
+            <AppointmentForm />
+          </div>
+        </div>
+      </section>
       <PatientEducation />
       <Credentials />
       <Reviews />
