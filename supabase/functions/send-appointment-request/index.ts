@@ -74,7 +74,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send confirmation email to the patient
     const patientEmailResponse = await resend.emails.send({
-      from: "Dr. Joseph Gideon's Office <noreply@santelishealth.com>",
+      from: "Geffrey Klein, MD <noreply@santelishealth.com>",
       to: [appointmentData.email],
       subject: "Appointment Request Received",
       html: `
@@ -88,7 +88,7 @@ const handler = async (req: Request): Promise<Response> => {
           <li><strong>Preferred Time:</strong> ${appointmentData.preferredTime}</li>
         </ul>
         <p>If you have any urgent questions, please don't hesitate to call our office.</p>
-        <p>Best regards,<br>Dr. Joseph Gideon's Office</p>
+        <p>Best regards,<br>Geffrey Klein, MD</p>
       `,
     });
 
