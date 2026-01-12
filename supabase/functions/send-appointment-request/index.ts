@@ -54,7 +54,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send email to the doctor
     const doctorEmailResponse = await resend.emails.send({
-      from: "Appointment Requests <onboarding@resend.dev>",
+      from: "Appointment Requests <noreply@santelishealth.com>",
       to: ["gyndok@yahoo.com"],
       subject: "New patient request",
       html: `
@@ -74,7 +74,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send confirmation email to the patient
     const patientEmailResponse = await resend.emails.send({
-      from: "Dr. Joseph Gideon's Office <onboarding@resend.dev>",
+      from: "Dr. Joseph Gideon's Office <noreply@santelishealth.com>",
       to: [appointmentData.email],
       subject: "Appointment Request Received",
       html: `
