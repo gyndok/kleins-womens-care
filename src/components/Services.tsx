@@ -35,7 +35,7 @@ const Services = () => {
     },
     {
       title: "Specialized Treatments",
-      description: "Endometriosis, uterine fibroids, cervical dysplasia, urinary incontinence, STD testing.",
+      description: "Endometriosis, uterine fibroids, cervical dysplasia, STD testing.",
       icon: "\u{1FA7A}",
       featured: false,
     },
