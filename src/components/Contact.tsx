@@ -1,123 +1,121 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Printer, Calendar, Languages } from "lucide-react";
+
 const Contact = () => {
-  return <section id="contact" className="py-20 bg-background">
+  return (
+    <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <header className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">Contact & Location</h2>
-            <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
-          </header>
+        <h2 className="text-3xl font-bold mb-12 text-center" style={{ color: "var(--dark-olive)" }}>
+          Contact & Location
+        </h2>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            <Card className="shadow-[var(--card-shadow)] overflow-hidden">
-              
-              <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                  Women's Specialists of Clear Lake
-                </h3>
-                
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">Office Address</p>
-                      <a 
-                        href="https://www.google.com/maps/search/?api=1&query=400+Medical+Center+Blvd+Suite+300+Webster+TX+77598" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-sm text-muted-foreground hover:text-primary transition-colors underline"
-                      >
-                        400 Medical Center Blvd, Suite 300<br />
-                        Webster, TX 77598
-                      </a>
-                    </div>
-                  </div>
+        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          {/* Info side */}
+          <div>
+            <h3 className="text-xl font-bold mb-4" style={{ color: "var(--dark-olive)" }}>
+              Women's Specialists of Clear Lake
+            </h3>
 
-                  <div className="flex items-start gap-3">
-                    <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">Phone</p>
-                      <p className="text-sm text-muted-foreground">(281) 557-0300</p>
-                      <p className="text-xs text-muted-foreground italic mt-1">
-                        *Please call if you are a self-pay patient
-                      </p>
-                    </div>
-                  </div>
+            <div className="space-y-4" style={{ color: "var(--charcoal)" }}>
+              <div>
+                <p className="font-semibold text-sm uppercase tracking-wide mb-1" style={{ color: "var(--dark-olive)" }}>
+                  Address
+                </p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=400+Medical+Center+Blvd+Suite+300+Webster+TX+77598"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                  style={{ color: "var(--deep-teal)" }}
+                >
+                  400 Medical Center Blvd, Suite 300<br />Webster, TX 77598
+                </a>
+              </div>
 
-                  <div className="flex items-start gap-3">
-                    <Printer className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">Fax</p>
-                      <p className="text-sm text-muted-foreground">(281) 557-3301</p>
-                    </div>
-                  </div>
+              <div>
+                <p className="font-semibold text-sm uppercase tracking-wide mb-1" style={{ color: "var(--dark-olive)" }}>
+                  Phone
+                </p>
+                <a href="tel:2815570300" className="hover:underline" style={{ color: "var(--deep-teal)" }}>
+                  (281) 557-0300
+                </a>
+                <p className="text-xs mt-1">*Please call if you are a self-pay patient</p>
+              </div>
 
-                  <div className="flex items-start gap-3">
-                    <Languages className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">Languages</p>
-                      <p className="text-sm text-muted-foreground">English, Spanish</p>
-                    </div>
-                  </div>
+              <div>
+                <p className="font-semibold text-sm uppercase tracking-wide mb-1" style={{ color: "var(--dark-olive)" }}>
+                  Fax
+                </p>
+                <p>(281) 557-3301</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-sm uppercase tracking-wide mb-1" style={{ color: "var(--dark-olive)" }}>
+                  Languages
+                </p>
+                <p>English, Spanish</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-sm uppercase tracking-wide mb-1" style={{ color: "var(--dark-olive)" }}>
+                  Office Hours
+                </p>
+                <div className="text-sm space-y-1">
+                  <p>Mon&ndash;Thu: 8:30 AM &ndash; 11:00 AM, 1:30 PM &ndash; 4:00 PM</p>
+                  <p>Fri: 8:30 AM &ndash; 11:00 AM</p>
+                  <p>Sat&ndash;Sun: Closed</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <div className="space-y-6">
-              <Card className="shadow-[var(--card-shadow)]">
-                <CardContent className="p-6">
-                  <h4 className="font-semibold mb-3 text-foreground text-xl">Office Hours</h4>
-                  <div className="space-y-2 text-base text-muted-foreground">
-                    <div className="flex justify-between">
-                      <span className="font-medium">Monday - Thursday:</span>
-                      <span>8:30 AM - 11:00 AM, 1:30 PM - 4:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">Friday:</span>
-                      <span>8:30 AM - 11:00 AM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">Saturday - Sunday:</span>
-                      <span>Closed</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+            <div className="mt-8">
+              <p className="font-semibold text-sm uppercase tracking-wide mb-3" style={{ color: "var(--dark-olive)" }}>
+                New Patient Forms
+              </p>
+              <div className="flex flex-col gap-2">
+                {[
+                  { label: "Obesity Clinic Intake Form", href: "https://intakeq.com/new/k3r67k" },
+                  { label: "New Obstetrical Patient", href: "https://intakeq.com/new/vplnkm" },
+                  { label: "New Gyn Patient", href: "https://intakeq.com/new/6nzzu9" },
+                ].map((form) => (
+                  <a
+                    key={form.label}
+                    href={form.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm px-4 py-2 rounded-lg font-medium transition-colors"
+                    style={{
+                      backgroundColor: "rgba(98, 146, 158, 0.1)",
+                      color: "var(--deep-teal)",
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "rgba(98, 146, 158, 0.2)")}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "rgba(98, 146, 158, 0.1)")}
+                  >
+                    {form.label} &rarr;
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
 
-              <Card className="shadow-[var(--card-shadow)] bg-primary/5 border-primary/20">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Calendar className="h-6 w-6 text-primary" />
-                    <h4 className="font-semibold text-foreground text-xl">New Patient Forms</h4>
-                  </div>
-                  <p className="text-base text-foreground mb-5 font-medium">
-                    Please fill out the appropriate form below. Once submitted, our staff will contact you to schedule your appointment.
-                  </p>
-                  <div className="space-y-3">
-                    <a href="https://intakeq.com/new/k3r67k" target="_blank" rel="noopener noreferrer" className="block">
-                      <Button variant="default" className="w-full justify-start text-base h-12">
-                        Obesity Clinic Intake Form
-                      </Button>
-                    </a>
-                    <a href="https://intakeq.com/new/vplnkm" target="_blank" rel="noopener noreferrer" className="block">
-                      <Button variant="default" className="w-full justify-start text-base h-12">
-                        New Obstetrical Patient Database
-                      </Button>
-                    </a>
-                    <a href="https://intakeq.com/new/6nzzu9" target="_blank" rel="noopener noreferrer" className="block">
-                      <Button variant="default" className="w-full justify-start text-base h-12">
-                        New Gyn Patient
-                      </Button>
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
+          {/* Map side */}
+          <div>
+            <div className="rounded-2xl overflow-hidden shadow-md h-80 md:h-full min-h-[320px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.0!2d-95.12!3d29.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDMzJzAuMCJOIDk1wrAwNycxMi4wIlc!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Office Location"
+              />
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;

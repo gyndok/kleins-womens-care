@@ -1,128 +1,92 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Baby, HeartPulse, Microscope, Pill, Shield, UserRound } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
-  const serviceCategories = [
+  const services = [
     {
-      icon: Baby,
       title: "Obstetric Care",
-      color: "text-primary",
-      services: [
-        "Prenatal Care",
-        "High Risk Pregnancies",
-        "Vaginal Delivery",
-        "Cesarean Section (C-section)",
-        "Multiple Gestation",
-        "Postpartum Care",
-        "Genetic Counseling"
-      ]
+      description: "Prenatal care, high-risk pregnancies, vaginal delivery, C-section, postpartum care.",
+      icon: "\u{1F930}",
+      featured: false,
     },
     {
-      icon: HeartPulse,
       title: "Gynecologic Surgery",
-      color: "text-secondary",
-      services: [
-        "Robotic Assisted Surgery",
-        "Total Laparoscopic Hysterectomy",
-        "Endometrial Ablation",
-        "Tubal Ligation",
-        "Diagnostic Hysteroscopy",
-        "Diagnostic Colposcopy"
-      ]
+      description: "Robotic assisted surgery, hysterectomy, endometrial ablation, tubal ligation.",
+      icon: "\u2695\uFE0F",
+      featured: false,
     },
     {
-      icon: UserRound,
       title: "Women's Health",
-      color: "text-primary",
-      services: [
-        "Annual Well Woman Exam",
-        "Pap Smear",
-        "Pelvic Exam",
-        "Mammography Screening",
-        "Hormone Replacement Therapy",
-        "Menopausal Disorders",
-        "Osteoporosis Management"
-      ]
+      description: "Annual exams, pap smears, mammography screening, hormone replacement, menopause care.",
+      icon: "\u2764\uFE0F",
+      featured: false,
     },
     {
-      icon: Pill,
       title: "Family Planning",
-      color: "text-secondary",
-      services: [
-        "Birth Control Management",
-        "IUD Implantation/Removal",
-        "Contraceptive Capsule Implant",
-        "Female Infertility",
-        "Contraceptive Counseling"
-      ]
+      description: "Birth control, IUD placement/removal, contraceptive implants, infertility evaluation.",
+      icon: "\u{1F46A}",
+      featured: false,
     },
     {
-      icon: Microscope,
+      title: "Weight Loss Clinic",
+      description: "Board certified obesity medicine. Personalized weight management programs and anti-obesity medications.",
+      icon: "\u2696\uFE0F",
+      href: "/weight-loss",
+      featured: true,
+    },
+    {
       title: "Specialized Treatments",
-      color: "text-primary",
-      services: [
-        "Endometriosis Treatment",
-        "Uterine Fibroid Procedures",
-        "Cervical Dysplasia Treatment",
-        "Urinary Incontinence",
-        "STD Testing & Treatment"
-      ]
+      description: "Endometriosis, uterine fibroids, cervical dysplasia, urinary incontinence, STD testing.",
+      icon: "\u{1FA7A}",
+      featured: false,
     },
-    {
-      icon: Shield,
-      title: "Cancer Screening",
-      color: "text-secondary",
-      services: [
-        "Cervical Cancer Screening",
-        "Biopsy Procedures"
-      ]
-    }
   ];
 
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-20" style={{ backgroundColor: "rgba(198, 197, 185, 0.2)" }}>
       <div className="container mx-auto px-4">
-        <header className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Services & Procedures</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive obstetric and gynecologic care with expertise in robotic surgery and high-risk cases
-          </p>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-4" />
-        </header>
+        <h2 className="text-3xl font-bold mb-4 text-center" style={{ color: "var(--dark-olive)" }}>
+          Services & Procedures
+        </h2>
+        <p className="text-center mb-12 max-w-2xl mx-auto" style={{ color: "var(--charcoal)" }}>
+          Comprehensive obstetric and gynecologic care with expertise in robotic surgery, high-risk pregnancies, and weight management.
+        </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {serviceCategories.map((category, index) => {
-            const Icon = category.icon;
-            return (
-              <Card 
-                key={index} 
-                className="shadow-[var(--card-shadow)] transition-all duration-300 hover:shadow-[var(--card-hover-shadow)] hover:-translate-y-1"
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className={`rounded-2xl p-6 transition-shadow hover:shadow-lg ${
+                service.featured ? "text-white" : "bg-white border"
+              }`}
+              style={
+                service.featured
+                  ? { background: "linear-gradient(135deg, var(--teal), var(--deep-teal))" }
+                  : { borderColor: "var(--pale-silver)" }
+              }
+            >
+              <div className="text-3xl mb-3">{service.icon}</div>
+              <h3
+                className="text-lg font-bold mb-2"
+                style={{ color: service.featured ? "#fff" : "var(--dark-olive)" }}
               >
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <Icon className={`h-6 w-6 ${category.color}`} />
-                    </div>
-                    <CardTitle className="text-xl">{category.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {category.services.map((service, idx) => (
-                      <Badge 
-                        key={idx} 
-                        variant="secondary" 
-                        className="text-xs py-1"
-                      >
-                        {service}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
+                {service.title}
+              </h3>
+              <p
+                className="text-sm"
+                style={{ color: service.featured ? "rgba(255,255,255,0.8)" : "var(--charcoal)" }}
+              >
+                {service.description}
+              </p>
+              {service.href && (
+                <Link
+                  to={service.href}
+                  className="inline-block mt-4 text-sm font-semibold text-white underline underline-offset-4"
+                >
+                  Learn More &rarr;
+                </Link>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>
