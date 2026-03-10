@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Users, MessageCircle, Heart, ArrowRight } from "lucide-react";
+import { Baby, Camera, Heart, ArrowRight } from "lucide-react";
 
 const Community = () => {
   return (
@@ -10,35 +10,35 @@ const Community = () => {
             className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
             style={{ backgroundColor: "rgba(98, 146, 158, 0.15)" }}
           >
-            <Users className="w-8 h-8" style={{ color: "var(--deep-teal)" }} />
+            <Baby className="w-8 h-8" style={{ color: "var(--deep-teal)" }} />
           </div>
 
           <h2 className="text-3xl font-bold mb-4" style={{ color: "var(--dark-olive)" }}>
-            Join Our Community
+            Dr. Klein's Baby Pictures
           </h2>
           <p className="text-lg mb-8" style={{ color: "var(--charcoal)" }}>
-            Connect with Dr. Klein and other patients in our Facebook group. Get health tips,
-            practice updates, and be part of a supportive community focused on women's health and wellness.
+            Join our Facebook group where patients share photos of their beautiful babies!
+            We love celebrating these special moments with our Dr. Klein family.
           </p>
 
           <div className="grid grid-cols-3 gap-6 mb-10 max-w-md mx-auto">
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
-                <Users className="w-5 h-5 mr-1.5" style={{ color: "var(--teal)" }} />
+                <Baby className="w-5 h-5 mr-1.5" style={{ color: "var(--teal)" }} />
               </div>
-              <p className="text-sm font-medium" style={{ color: "var(--dark-olive)" }}>Active Members</p>
+              <p className="text-sm font-medium" style={{ color: "var(--dark-olive)" }}>Baby Photos</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
-                <MessageCircle className="w-5 h-5 mr-1.5" style={{ color: "var(--teal)" }} />
+                <Camera className="w-5 h-5 mr-1.5" style={{ color: "var(--teal)" }} />
               </div>
-              <p className="text-sm font-medium" style={{ color: "var(--dark-olive)" }}>Health Tips</p>
+              <p className="text-sm font-medium" style={{ color: "var(--dark-olive)" }}>Share Yours</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-2">
                 <Heart className="w-5 h-5 mr-1.5" style={{ color: "var(--teal)" }} />
               </div>
-              <p className="text-sm font-medium" style={{ color: "var(--dark-olive)" }}>Supportive</p>
+              <p className="text-sm font-medium" style={{ color: "var(--dark-olive)" }}>Celebrate Together</p>
             </div>
           </div>
 
