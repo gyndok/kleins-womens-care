@@ -77,6 +77,29 @@ const WeightLoss = () => {
         </div>
       </section>
 
+      {/* Telemedicine divider */}
+      <section className="py-0 bg-white">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <div className="flex items-center gap-4">
+            <div className="flex-1 h-px" style={{ backgroundColor: "var(--pale-silver)" }} />
+            <span className="text-sm font-medium uppercase tracking-wider" style={{ color: "var(--charcoal)" }}>
+              or
+            </span>
+            <div className="flex-1 h-px" style={{ backgroundColor: "var(--pale-silver)" }} />
+          </div>
+          <div className="text-center mt-6">
+            <p className="text-lg font-semibold" style={{ color: "var(--dark-olive)" }}>
+              Prefer a Telemedicine Option?
+            </p>
+            <p className="text-sm mt-2 max-w-xl mx-auto" style={{ color: "var(--charcoal)" }}>
+              For patients who prefer the convenience of virtual care, I also offer weight loss management
+              through Mochi Health — a fully online membership with physician access, medications, and coaching
+              from anywhere.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <MochiHealth />
       <Footer />
     </main>
