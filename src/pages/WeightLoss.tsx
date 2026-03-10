@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MochiHealth from "@/components/MochiHealth";
 import { Button } from "@/components/ui/button";
+import dabomBadge from "@/assets/dabom-badge.png";
 
 const WeightLoss = () => {
   return (
@@ -51,6 +52,15 @@ const WeightLoss = () => {
               Anti-obesity medications, including GLP-1 receptor agonists, may be prescribed as part of your
               individualized treatment plan to help you achieve sustainable results.
             </p>
+          </div>
+          <div className="mt-8 flex justify-center">
+            <a href="https://www.abom.org" target="_blank" rel="noopener noreferrer">
+              <img
+                src={dabomBadge}
+                alt="Diplomate - American Board of Obesity Medicine"
+                className="h-24 md:h-28 w-auto"
+              />
+            </a>
           </div>
         </div>
       </section>
