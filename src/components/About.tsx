@@ -1,4 +1,5 @@
 import abogBadge from "@/assets/abog-badge.jpg";
+import acogBadge from "@/assets/acog-badge.jpeg";
 
 const About = () => {
   const badges = [
@@ -50,11 +51,18 @@ const About = () => {
             ))}
           </div>
 
-          <div className="mt-8 flex justify-center">
+          <div className="mt-8 flex justify-center items-center gap-8">
             <a href="https://www.abog.org" target="_blank" rel="noopener noreferrer">
               <img
                 src={abogBadge}
                 alt="ABOG Board-Certified - Obstetrics and Gynecology"
+                className="h-24 md:h-28 w-auto"
+              />
+            </a>
+            <a href="https://www.acog.org/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={acogBadge}
+                alt="ACOG - The American College of Obstetricians and Gynecologists"
                 className="h-24 md:h-28 w-auto"
               />
             </a>
