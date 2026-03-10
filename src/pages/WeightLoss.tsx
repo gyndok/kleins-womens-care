@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MochiHealth from "@/components/MochiHealth";
 import { Button } from "@/components/ui/button";
 
 const WeightLoss = () => {
@@ -76,6 +77,7 @@ const WeightLoss = () => {
         </div>
       </section>
 
+      <MochiHealth />
       <Footer />
     </main>
   );

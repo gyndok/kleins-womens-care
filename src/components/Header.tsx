@@ -12,7 +12,6 @@ const Header = () => {
     { label: "About", href: isHome ? "#about" : "/#about" },
     { label: "Services", href: isHome ? "#services" : "/#services" },
     { label: "Weight Loss", href: "/weight-loss" },
-    { label: "Mochi Health", href: isHome ? "#mochi-health" : "/#mochi-health" },
     { label: "Videos", href: "/videos" },
     { label: "Consent Forms", href: "/consent-forms" },
     { label: "Reviews", href: isHome ? "#reviews" : "/#reviews" },
