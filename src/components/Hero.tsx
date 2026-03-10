@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Text side */}
-          <div className="flex-1 max-w-xl">
+          <div className="flex-1 max-w-xl text-center md:text-center">
             <p
               className="text-sm font-semibold tracking-widest uppercase mb-3"
               style={{ color: "var(--teal)" }}
@@ -30,7 +30,7 @@ const Hero = () => {
             <p className="italic text-lg mb-8" style={{ color: "var(--teal)" }}>
               "Taking care of women through all stages of life"
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white px-8">
                 <Link to="/appointment">Book Appointment</Link>
               </Button>
