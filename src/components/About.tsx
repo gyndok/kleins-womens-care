@@ -1,3 +1,5 @@
+import abogBadge from "@/assets/abog-badge.jpg";
+
 const About = () => {
   const badges = [
     { title: "Board Certified", subtitle: "Obstetrics & Gynecology" },
@@ -46,6 +48,16 @@ const About = () => {
                 </p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <a href="https://www.abog.org" target="_blank" rel="noopener noreferrer">
+              <img
+                src={abogBadge}
+                alt="ABOG Board-Certified - Obstetrics and Gynecology"
+                className="h-24 md:h-28 w-auto"
+              />
+            </a>
           </div>
         </div>
       </div>
