@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { FileText } from "lucide-react";
@@ -22,6 +23,14 @@ const consentForms = [
 const ConsentForms = () => {
   return (
     <main className="min-h-screen">
+      <Helmet>
+        <title>Consent Forms | Dr. Geffrey Klein | Webster, TX</title>
+        <meta name="description" content="Complete your consent forms online before your appointment with Dr. Geffrey Klein. Forms for surgical procedures, IUD, hormone therapy, and more." />
+        <link rel="canonical" href="https://geffreyklein.com/consent-forms" />
+        <meta property="og:title" content="Consent Forms | Dr. Geffrey Klein" />
+        <meta property="og:description" content="Complete consent forms online before your appointment with Dr. Klein." />
+        <meta property="og:url" content="https://geffreyklein.com/consent-forms" />
+      </Helmet>
       <Header />
 
       <section className="py-20 bg-white">

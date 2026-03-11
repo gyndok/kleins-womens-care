@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -16,6 +17,14 @@ const categories = [...new Set(videos.map((v) => v.category))];
 const Videos = () => {
   return (
     <main className="min-h-screen">
+      <Helmet>
+        <title>Patient Education Videos | Dr. Geffrey Klein | Webster, TX</title>
+        <meta name="description" content="Watch educational videos about women's health, surgical procedures, and weight loss from Dr. Geffrey Klein, board-certified OBGYN in Webster, TX." />
+        <link rel="canonical" href="https://geffreyklein.com/videos" />
+        <meta property="og:title" content="Patient Education Videos | Dr. Geffrey Klein" />
+        <meta property="og:description" content="Educational videos about women's health, surgical procedures, and weight loss from Dr. Klein." />
+        <meta property="og:url" content="https://geffreyklein.com/videos" />
+      </Helmet>
       <Header />
 
       <section className="py-20 bg-white">

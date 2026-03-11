@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MochiHealth from "@/components/MochiHealth";
@@ -7,6 +8,30 @@ import dabomBadge from "@/assets/dabom-badge.png";
 const WeightLoss = () => {
   return (
     <main className="min-h-screen">
+      <Helmet>
+        <title>Weight Loss Clinic | Dr. Geffrey Klein | Webster, TX</title>
+        <meta name="description" content="Board-certified obesity medicine weight loss clinic in Webster, TX. GLP-1 medications, personalized plans, and telemedicine options through Mochi Health." />
+        <link rel="canonical" href="https://geffreyklein.com/weight-loss" />
+        <meta property="og:title" content="Weight Loss Clinic | Dr. Geffrey Klein | Webster, TX" />
+        <meta property="og:description" content="Board-certified obesity medicine weight loss clinic in Webster, TX. GLP-1 medications, personalized plans, and telemedicine options." />
+        <meta property="og:url" content="https://geffreyklein.com/weight-loss" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "MedicalBusiness",
+          "name": "Dr. Klein's Weight Loss Clinic",
+          "description": "Board-certified obesity medicine weight loss clinic offering personalized treatment plans and GLP-1 medications.",
+          "medicalSpecialty": "Obesity Medicine",
+          "url": "https://geffreyklein.com/weight-loss",
+          "telephone": "+1-281-557-0300",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "400 Medical Center Blvd, Suite 300",
+            "addressLocality": "Webster",
+            "addressRegion": "TX",
+            "postalCode": "77598"
+          }
+        })}</script>
+      </Helmet>
       <Header />
 
       {/* Hero */}

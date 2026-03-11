@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AppointmentForm from "@/components/AppointmentForm";
@@ -6,6 +7,14 @@ import { Button } from "@/components/ui/button";
 const Appointment = () => {
   return (
     <main className="min-h-screen">
+      <Helmet>
+        <title>Book an Appointment | Dr. Geffrey Klein | Webster, TX</title>
+        <meta name="description" content="Schedule an appointment with Dr. Geffrey Klein, board-certified OBGYN and obesity medicine specialist in Webster, TX. New patient intake forms available." />
+        <link rel="canonical" href="https://geffreyklein.com/appointment" />
+        <meta property="og:title" content="Book an Appointment | Dr. Geffrey Klein" />
+        <meta property="og:description" content="Schedule an appointment with Dr. Klein, board-certified OBGYN in Webster, TX." />
+        <meta property="og:url" content="https://geffreyklein.com/appointment" />
+      </Helmet>
       <Header />
 
       <section className="py-20 bg-white">
