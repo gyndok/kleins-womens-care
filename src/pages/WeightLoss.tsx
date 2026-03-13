@@ -63,6 +63,33 @@ const WeightLoss = () => {
         </div>
       </section>
 
+      {/* Welcome Packet PDF */}
+      <section className="py-16" style={{ backgroundColor: "rgba(198, 197, 185, 0.1)" }}>
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-2xl font-bold mb-6 text-center" style={{ color: "var(--dark-olive)" }}>
+            Weight Clinic Welcome Packet
+          </h2>
+          <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
+            <iframe
+              src="/weight-clinic-welcome.pdf"
+              title="Weight Clinic Welcome Packet"
+              className="w-full h-[800px]"
+            />
+          </div>
+          <p className="text-center mt-4">
+            <a
+              href="/weight-clinic-welcome.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm underline"
+              style={{ color: "var(--teal)" }}
+            >
+              Open in new tab / Download
+            </a>
+          </p>
+        </div>
+      </section>
+
       {/* About the program */}
       <section className="py-16" style={{ backgroundColor: "rgba(198, 197, 185, 0.2)" }}>
         <div className="container mx-auto px-4 max-w-3xl">
