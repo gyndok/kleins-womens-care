@@ -9,6 +9,7 @@ import WeightLoss from "./pages/WeightLoss";
 import Videos from "./pages/Videos";
 import Appointment from "./pages/Appointment";
 import ConsentForms from "./pages/ConsentForms";
+import PatientEducation from "./pages/PatientEducation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/videos" element={<Videos />} />
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/consent-forms" element={<ConsentForms />} />
+          <Route path="/patient-education" element={<PatientEducation />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
