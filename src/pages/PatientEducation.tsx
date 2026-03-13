@@ -39,16 +39,12 @@ const handouts: Handout[] = [
 
   // Obesity Medicine
   { title: "Anti-Obesity Medication Overview", file: "Anti-Obesity-Medication-Overview.pdf", category: "Obesity Medicine" },
-  { title: "Compounding Pharmacy Warning", file: "Compounding-Warning.pdf", category: "Obesity Medicine" },
-  { title: "Contrave (Bupropion-Naltrexone)", file: "Contrave-Information.pdf", category: "Obesity Medicine" },
   { title: "Hair Loss on GLP-1 Medications", file: "hair-loss-glp1.pdf", category: "Obesity Medicine" },
   { title: "Objective Measures & Consequences of Obesity", file: "Obective-Measures-and-Consequences.pdf", category: "Obesity Medicine" },
   { title: "Obesity is a Disease", file: "Obesity-is-a-Disease.pdf", category: "Obesity Medicine" },
   { title: "Obesity Medications", file: "Obesity-Medications.pdf", category: "Obesity Medicine" },
   { title: "Orlistat (Xenical / Alli)", file: "Orlistat-Information.pdf", category: "Obesity Medicine" },
-  { title: "Phentermine", file: "Phentermine-education.pdf", category: "Obesity Medicine" },
   { title: "Prescriptions for Weight Loss", file: "Prescriptions-for-Weight-Loss.pdf", category: "Obesity Medicine" },
-  { title: "Qsymia (Phentermine-Topiramate)", file: "Qsymia-Information.pdf", category: "Obesity Medicine" },
   { title: "Understanding GLP-1 Agonists", file: "Understanding-GLP-1-Agonists.pdf", category: "Obesity Medicine" },
   { title: "Weight Clinic Overview", file: "Weight-Clinic-Print-Out.pdf", category: "Obesity Medicine" },
   { title: "Welcome to the Weight Loss Clinic", file: "Welcome-to-the-Weight-Loss-Clinic.pdf", category: "Obesity Medicine" },
