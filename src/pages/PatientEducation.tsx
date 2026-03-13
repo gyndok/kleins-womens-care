@@ -13,12 +13,12 @@ interface Handout {
 const handouts: Handout[] = [
   // Gynecology
   { title: "Adenomyosis", file: "Adenomyosis.pdf", category: "Gynecology" },
-  { title: "Domestic Violence Resources", file: "Domestic Violence Patient Education.pdf", category: "Gynecology" },
-  { title: "Heavy Menstrual Cycles", file: "Heavy Menstrual Cycles.pdf", category: "Gynecology" },
+  { title: "Domestic Violence Resources", file: "Domestic-Violence-Patient-Education.pdf", category: "Gynecology" },
+  { title: "Heavy Menstrual Cycles", file: "Heavy-Menstrual-Cycles.pdf", category: "Gynecology" },
   { title: "Low Libido", file: "low-libido.pdf", category: "Gynecology" },
-  { title: "Lynch Syndrome Screening", file: "Lynch Syndrome Screening.pdf", category: "Gynecology" },
+  { title: "Lynch Syndrome Screening", file: "Lynch-Syndrome-Screening.pdf", category: "Gynecology" },
   { title: "PMDD (Premenstrual Dysphoric Disorder)", file: "PMDD.pdf", category: "Gynecology" },
-  { title: "Postpartum Depression", file: "Postpartum Depression.pdf", category: "Gynecology" },
+  { title: "Postpartum Depression", file: "Postpartum-Depression.pdf", category: "Gynecology" },
   { title: "Hair Loss in Women", file: "Understanding_Hair_Loss_in_Women_A_Patient_Guide.pdf", category: "Gynecology" },
 
   // Menopause & HRT
@@ -26,39 +26,39 @@ const handouts: Handout[] = [
   { title: "Menopause", file: "Menopause.pdf", category: "Menopause & HRT" },
 
   // Contraception
-  { title: "Birth Control Options", file: "Birth Control.pdf", category: "Contraception" },
-  { title: "Sterilization", file: "Sterilization Patient Education.pdf", category: "Contraception" },
+  { title: "Birth Control Options", file: "Birth-Control.pdf", category: "Contraception" },
+  { title: "Sterilization", file: "Sterilization-Patient-Education.pdf", category: "Contraception" },
 
   // Obstetrics
-  { title: "Ectopic Pregnancy & Methotrexate", file: "Methotrexate Ectopic Pregnancy.pdf", category: "Obstetrics" },
-  { title: "Preconception Education", file: "Preconception Education.pdf", category: "Obstetrics" },
-  { title: "Pregnancy FAQ", file: "Pregnancy FAQ.pdf", category: "Obstetrics" },
-  { title: "Pregnancy FAQ (with Weight Guidelines)", file: "Pregnancy FAQ with Weight.pdf", category: "Obstetrics" },
-  { title: "RSV in Pregnancy", file: "RSV in Pregnancy.pdf", category: "Obstetrics" },
-  { title: "Avoiding Toxins During Pregnancy", file: "Steering Clear of Toxins During Pregnancy.pdf", category: "Obstetrics" },
+  { title: "Ectopic Pregnancy & Methotrexate", file: "Methotrexate-Ectopic-Pregnancy.pdf", category: "Obstetrics" },
+  { title: "Preconception Education", file: "Preconception-Education.pdf", category: "Obstetrics" },
+  { title: "Pregnancy FAQ", file: "Pregnancy-FAQ.pdf", category: "Obstetrics" },
+  { title: "Pregnancy FAQ (with Weight Guidelines)", file: "Pregnancy-FAQ-with-Weight.pdf", category: "Obstetrics" },
+  { title: "RSV in Pregnancy", file: "RSV-in-Pregnancy.pdf", category: "Obstetrics" },
+  { title: "Avoiding Toxins During Pregnancy", file: "Steering-Clear-of-Toxins-During-Pregnancy.pdf", category: "Obstetrics" },
 
   // Obesity Medicine
-  { title: "Anti-Obesity Medication Overview", file: "Anti-Obesity Medication Overview.pdf", category: "Obesity Medicine" },
-  { title: "Compounding Pharmacy Warning", file: "Compounding Warning.pdf", category: "Obesity Medicine" },
-  { title: "Contrave (Bupropion-Naltrexone)", file: "Contrave Information.pdf", category: "Obesity Medicine" },
+  { title: "Anti-Obesity Medication Overview", file: "Anti-Obesity-Medication-Overview.pdf", category: "Obesity Medicine" },
+  { title: "Compounding Pharmacy Warning", file: "Compounding-Warning.pdf", category: "Obesity Medicine" },
+  { title: "Contrave (Bupropion-Naltrexone)", file: "Contrave-Information.pdf", category: "Obesity Medicine" },
   { title: "Hair Loss on GLP-1 Medications", file: "hair-loss-glp1.pdf", category: "Obesity Medicine" },
-  { title: "Objective Measures & Consequences of Obesity", file: "Obective Measures and Consequences.pdf", category: "Obesity Medicine" },
-  { title: "Obesity is a Disease", file: "Obesity is a Disease.pdf", category: "Obesity Medicine" },
-  { title: "Obesity Medications", file: "Obesity Medications.pdf", category: "Obesity Medicine" },
-  { title: "Orlistat (Xenical / Alli)", file: "Orlistat Information.pdf", category: "Obesity Medicine" },
-  { title: "Phentermine", file: "Phentermine education.pdf", category: "Obesity Medicine" },
-  { title: "Prescriptions for Weight Loss", file: "Prescriptions for Weight Loss.pdf", category: "Obesity Medicine" },
-  { title: "Qsymia (Phentermine-Topiramate)", file: "Qsymia Information.pdf", category: "Obesity Medicine" },
-  { title: "Understanding GLP-1 Agonists", file: "Understanding GLP-1 Agonists.pdf", category: "Obesity Medicine" },
-  { title: "Weight Clinic Overview", file: "Weight Clinic Print Out.pdf", category: "Obesity Medicine" },
-  { title: "Welcome to the Weight Loss Clinic", file: "Welcome to the Weight Loss Clinic.pdf", category: "Obesity Medicine" },
-  { title: "Welcome to the Weight Loss Practice", file: "Welcome to the Weight Loss Practice.pdf", category: "Obesity Medicine" },
+  { title: "Objective Measures & Consequences of Obesity", file: "Obective-Measures-and-Consequences.pdf", category: "Obesity Medicine" },
+  { title: "Obesity is a Disease", file: "Obesity-is-a-Disease.pdf", category: "Obesity Medicine" },
+  { title: "Obesity Medications", file: "Obesity-Medications.pdf", category: "Obesity Medicine" },
+  { title: "Orlistat (Xenical / Alli)", file: "Orlistat-Information.pdf", category: "Obesity Medicine" },
+  { title: "Phentermine", file: "Phentermine-education.pdf", category: "Obesity Medicine" },
+  { title: "Prescriptions for Weight Loss", file: "Prescriptions-for-Weight-Loss.pdf", category: "Obesity Medicine" },
+  { title: "Qsymia (Phentermine-Topiramate)", file: "Qsymia-Information.pdf", category: "Obesity Medicine" },
+  { title: "Understanding GLP-1 Agonists", file: "Understanding-GLP-1-Agonists.pdf", category: "Obesity Medicine" },
+  { title: "Weight Clinic Overview", file: "Weight-Clinic-Print-Out.pdf", category: "Obesity Medicine" },
+  { title: "Welcome to the Weight Loss Clinic", file: "Welcome-to-the-Weight-Loss-Clinic.pdf", category: "Obesity Medicine" },
+  { title: "Welcome to the Weight Loss Practice", file: "Welcome-to-the-Weight-Loss-Practice.pdf", category: "Obesity Medicine" },
 
   // Procedures
-  { title: "Da Vinci Robotic Hysterectomy", file: "daVinci Hysterectomy.pdf", category: "Procedures" },
-  { title: "Endometrial Biopsy", file: "Endometrial Biopsy.pdf", category: "Procedures" },
+  { title: "Da Vinci Robotic Hysterectomy", file: "daVinci-Hysterectomy.pdf", category: "Procedures" },
+  { title: "Endometrial Biopsy", file: "Endometrial-Biopsy.pdf", category: "Procedures" },
   { title: "Laparoscopy", file: "Laparoscopy.pdf", category: "Procedures" },
-  { title: "NovaSure Endometrial Ablation", file: "Novasure Patient Education.pdf", category: "Procedures" },
+  { title: "NovaSure Endometrial Ablation", file: "Novasure-Patient-Education.pdf", category: "Procedures" },
 ];
 
 const categories = [
