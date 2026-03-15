@@ -1,43 +1,43 @@
 import { Link } from "react-router-dom";
-import servicesIcons from "@/assets/generated/services-icons.png";
+import { Baby, Scissors, Heart, Users, Scale, Microscope } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
       title: "Obstetric Care",
       description: "Prenatal care, high-risk pregnancies, vaginal delivery, C-section, postpartum care.",
-      icon: "\u{1F930}",
+      Icon: Baby,
       featured: false,
     },
     {
       title: "Gynecologic Surgery",
       description: "Robotic assisted surgery, hysterectomy, endometrial ablation, tubal ligation.",
-      icon: "\u2695\uFE0F",
+      Icon: Scissors,
       featured: false,
     },
     {
       title: "Women's Health",
       description: "Annual exams, pap smears, mammography screening, hormone replacement, menopause care.",
-      icon: "\u2764\uFE0F",
+      Icon: Heart,
       featured: false,
     },
     {
       title: "Family Planning",
       description: "Birth control, IUD placement/removal, contraceptive implants, infertility evaluation.",
-      icon: "\u{1F46A}",
+      Icon: Users,
       featured: false,
     },
     {
       title: "Weight Loss Clinic",
       description: "Board certified obesity medicine. Personalized weight management programs and anti-obesity medications.",
-      icon: "\u2696\uFE0F",
+      Icon: Scale,
       href: "/weight-loss",
       featured: true,
     },
     {
       title: "Specialized Treatments",
       description: "Endometriosis, uterine fibroids, cervical dysplasia, STD testing.",
-      icon: "\u{1FA7A}",
+      Icon: Microscope,
       featured: false,
     },
   ];
@@ -45,9 +45,6 @@ const Services = () => {
   return (
     <section id="services" className="py-20" style={{ backgroundColor: "rgba(198, 197, 185, 0.2)" }}>
       <div className="container mx-auto px-4">
-        <div className="flex justify-center mb-6">
-          <img src={servicesIcons} alt="" aria-hidden="true" className="h-16 object-contain opacity-75" />
-        </div>
         <h2 className="text-3xl font-bold mb-4 text-center" style={{ color: "var(--dark-olive)" }}>
           Services & Procedures
         </h2>
@@ -68,7 +65,20 @@ const Services = () => {
                   : { borderColor: "var(--pale-silver)" }
               }
             >
-              <div className="text-3xl mb-3">{service.icon}</div>
+              <div
+                className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
+                style={
+                  service.featured
+                    ? { backgroundColor: "rgba(255,255,255,0.2)" }
+                    : { backgroundColor: "rgba(98, 146, 158, 0.12)" }
+                }
+              >
+                <service.Icon
+                  size={24}
+                  style={{ color: service.featured ? "#fff" : "var(--teal)" }}
+                  strokeWidth={1.75}
+                />
+              </div>
               <h3
                 className="text-lg font-bold mb-2"
                 style={{ color: service.featured ? "#fff" : "var(--dark-olive)" }}

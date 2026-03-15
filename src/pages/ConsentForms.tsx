@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { FileText } from "lucide-react";
+import consentFormsHero from "@/assets/generated/consent-forms-hero.png";
 
 const consentForms = [
   { name: "VBAC Consent", url: "https://intakeq.com/new/wquxyg" },
@@ -33,14 +34,18 @@ const ConsentForms = () => {
       </Helmet>
       <Header />
 
+      {/* Hero */}
+      <section className="py-20 text-white relative overflow-hidden" style={{ background: "linear-gradient(135deg, var(--teal), var(--deep-teal))" }}>
+        <div className="absolute inset-0" style={{ backgroundImage: `url(${consentFormsHero})`, backgroundSize: "cover", backgroundPosition: "center" }} />
+        <div className="absolute inset-0" style={{ backgroundColor: "rgba(30, 80, 90, 0.55)" }} />
+        <div className="container mx-auto px-4 max-w-3xl text-center relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Consent Forms</h1>
+          <p className="text-xl text-white/80">Please complete the appropriate form prior to your procedure or appointment</p>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4 text-center" style={{ color: "var(--dark-olive)" }}>
-            Consent Forms
-          </h1>
-          <p className="text-center mb-12 max-w-2xl mx-auto" style={{ color: "var(--charcoal)" }}>
-            Please complete the appropriate consent form prior to your procedure or appointment
-          </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {consentForms.map((form) => (
