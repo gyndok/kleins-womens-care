@@ -29,8 +29,8 @@ const Videos = () => {
       <Header />
 
       {/* Hero */}
-      <section className="py-20 text-white relative overflow-hidden" style={{ background: "linear-gradient(135deg, var(--teal), var(--deep-teal))" }}>
-        <div className="absolute inset-0" style={{ backgroundImage: `url(${videosHero})`, backgroundSize: "cover", backgroundPosition: "center 40%" }} />
+      <section className="py-28 text-white relative overflow-hidden" style={{ background: "linear-gradient(135deg, var(--teal), var(--deep-teal))" }}>
+        <div className="absolute inset-0" style={{ backgroundImage: `url(${videosHero})`, backgroundSize: "cover", backgroundPosition: "center 50%" }} />
         <div className="absolute inset-0" style={{ backgroundColor: "rgba(30, 80, 90, 0.55)" }} />
         <div className="container mx-auto px-4 max-w-3xl text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Patient Education Videos</h1>
