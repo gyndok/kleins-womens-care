@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Baby, Camera, Heart, ArrowRight } from "lucide-react";
+import communityBg from "@/assets/generated/community-bg.png";
 
 const Community = () => {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-20 relative overflow-hidden" style={{ backgroundImage: `url(${communityBg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
+      <div className="absolute inset-0 bg-white/88" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <div
             className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
@@ -59,6 +61,7 @@ const Community = () => {
         </div>
       </div>
     </section>
+
   );
 };
 

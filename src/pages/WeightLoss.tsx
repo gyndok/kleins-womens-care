@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import MochiHealth from "@/components/MochiHealth";
 import { Button } from "@/components/ui/button";
 import dabomBadge from "@/assets/dabom-badge.png";
+import weightLossHero from "@/assets/generated/weight-loss-hero.png";
 
 const WeightLoss = () => {
   return (
@@ -35,8 +36,10 @@ const WeightLoss = () => {
       <Header />
 
       {/* Hero */}
-      <section className="py-20 text-white" style={{ background: "linear-gradient(135deg, var(--teal), var(--deep-teal))" }}>
-        <div className="container mx-auto px-4 max-w-3xl text-center">
+      <section className="py-20 text-white relative overflow-hidden" style={{ background: "linear-gradient(135deg, var(--teal), var(--deep-teal))" }}>
+        <div className="absolute inset-0" style={{ backgroundImage: `url(${weightLossHero})`, backgroundSize: "cover", backgroundPosition: "center" }} />
+        <div className="absolute inset-0" style={{ backgroundColor: "rgba(30, 80, 90, 0.55)" }} />
+        <div className="container mx-auto px-4 max-w-3xl text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Weight Loss Clinic</h1>
           <p className="text-xl text-white/80 mb-2">Board Certified Obesity Medicine</p>
           <p className="text-lg text-white/70">Personalized programs to help you achieve your health goals</p>

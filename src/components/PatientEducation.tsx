@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Video } from "lucide-react";
+import patientEducationBanner from "@/assets/generated/patient-education-banner.png";
 
 const PatientEducation = () => {
   const videos = [
@@ -42,8 +43,9 @@ const PatientEducation = () => {
 
   return (
     <section id="education" className="py-20 bg-muted/30">
+      <img src={patientEducationBanner} alt="" aria-hidden="true" className="w-full object-cover" style={{ height: "200px", display: "block" }} />
       <div className="container mx-auto px-4">
-        <header className="text-center mb-12">
+        <header className="text-center mb-12 mt-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="p-2 bg-primary/10 rounded-lg">
               <Video className="h-8 w-8 text-primary" />

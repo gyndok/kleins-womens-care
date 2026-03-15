@@ -1,5 +1,6 @@
 import abogBadge from "@/assets/abog-badge.jpg";
 import acogBadge from "@/assets/acog-badge.jpeg";
+import aboutSidebar from "@/assets/generated/about-sidebar.png";
 
 const About = () => {
   const badges = [
@@ -31,6 +32,11 @@ const About = () => {
             <p className="text-xl italic text-center mt-8" style={{ color: "var(--teal)" }}>
               "Taking care of women through all stages of life."
             </p>
+          </div>
+
+          {/* Decorative accent */}
+          <div className="mb-8 rounded-2xl overflow-hidden shadow-sm">
+            <img src={aboutSidebar} alt="" aria-hidden="true" className="w-full object-cover" style={{ height: "120px" }} />
           </div>
 
           {/* Credential badges */}

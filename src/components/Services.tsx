@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import servicesIcons from "@/assets/generated/services-icons.png";
 
 const Services = () => {
   const services = [
@@ -44,6 +45,9 @@ const Services = () => {
   return (
     <section id="services" className="py-20" style={{ backgroundColor: "rgba(198, 197, 185, 0.2)" }}>
       <div className="container mx-auto px-4">
+        <div className="flex justify-center mb-6">
+          <img src={servicesIcons} alt="" aria-hidden="true" className="h-16 object-contain opacity-75" />
+        </div>
         <h2 className="text-3xl font-bold mb-4 text-center" style={{ color: "var(--dark-olive)" }}>
           Services & Procedures
         </h2>
