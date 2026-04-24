@@ -89,7 +89,7 @@ const MochiHealth = () => {
                   {selected.period}
                 </span>
               </div>
-              {selected.note && (
+              {"note" in selected && selected.note && (
                 <p className="text-sm mt-1" style={{ color: "var(--charcoal)" }}>
                   {selected.note}
                 </p>

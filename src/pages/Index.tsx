@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import InterviewVideo from "@/components/InterviewVideo";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Reviews from "@/components/Reviews";
@@ -21,6 +22,7 @@ const Index = () => {
       </Helmet>
       <Header />
       <Hero />
+      <InterviewVideo />
       <About />
       <Services />
       <Reviews />
