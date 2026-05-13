@@ -48,6 +48,10 @@ const Hero = () => {
               <img
                 src={heroImage}
                 alt="Dr. Geffrey H. Klein"
+                width={320}
+                height={384}
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             </div>
