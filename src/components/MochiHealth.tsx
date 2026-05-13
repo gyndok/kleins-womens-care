@@ -156,7 +156,7 @@ const MochiHealth = () => {
             style={{ background: "linear-gradient(135deg, var(--teal), var(--deep-teal))" }}
           >
             <p className="text-white text-sm font-medium mb-2">
-              Use my provider referral code at signup
+              Use my provider referral code at checkout
             </p>
             <div className="flex items-center justify-center gap-3">
               <span className="text-3xl font-bold tracking-widest text-white">
@@ -170,6 +170,14 @@ const MochiHealth = () => {
                 <Copy className="w-5 h-5 text-white" />
               </button>
             </div>
+            <p className="text-white text-sm font-semibold mt-3">
+              Save $40 on your first month
+            </p>
+            <p className="text-white/90 text-xs mt-1 leading-relaxed">
+              New patients get a $40 discount on their first health subscription
+              when you apply my code at checkout. You'll stay on my panel for
+              continuity of care.
+            </p>
             {copied && (
               <p className="text-white/80 text-xs mt-2">Copied to clipboard!</p>
             )}
