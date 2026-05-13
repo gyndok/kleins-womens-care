@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="flex-1 max-w-xl text-center md:text-center">
             <p
               className="text-sm font-semibold tracking-widest uppercase mb-3"
-              style={{ color: "var(--teal)" }}
+              style={{ color: "var(--deep-teal)" }}
             >
               Women's Health & Weight Management
             </p>
@@ -48,6 +48,10 @@ const Hero = () => {
               <img
                 src={heroImage}
                 alt="Dr. Geffrey H. Klein"
+                width={320}
+                height={384}
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             </div>

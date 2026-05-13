@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://geffreyklein.com/sitemap.xml
+Sitemap: https://kleins-womens-care.lovable.app/sitemap.xml
