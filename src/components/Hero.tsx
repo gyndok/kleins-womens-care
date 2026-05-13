@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="flex-1 max-w-xl text-center md:text-center">
             <p
               className="text-sm font-semibold tracking-widest uppercase mb-3"
-              style={{ color: "var(--teal)" }}
+              style={{ color: "var(--deep-teal)" }}
             >
               Women's Health & Weight Management
             </p>
