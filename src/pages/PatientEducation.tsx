@@ -240,6 +240,43 @@ const PatientEducation = () => {
         </div>
       </section>
 
+      {/* Live Dropbox folder */}
+      <section className="py-16" style={{ backgroundColor: "#FAF8F3" }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto text-center mb-8">
+            <h2 className="text-3xl font-bold mb-3" style={{ color: "var(--dark-olive)" }}>
+              Live Patient Education Folder
+            </h2>
+            <p style={{ color: "var(--charcoal)" }}>
+              This folder mirrors Dr. Klein's Dropbox in real time — new handouts appear here automatically.
+            </p>
+          </div>
+          <div className="max-w-5xl mx-auto rounded-xl overflow-hidden border shadow-sm bg-white" style={{ borderColor: "var(--pale-silver)" }}>
+            <iframe
+              src="https://www.dropbox.com/scl/fo/0qogxy6k8flo3nmd59fgn/ACTFvjNPyKPeHoxClydntRQ?rlkey=x35kbk6e1b0q8gp7u91923qmz&st=maw89b1w&dl=0"
+              title="Patient Education Dropbox Folder"
+              className="w-full"
+              style={{ height: "700px", border: "none" }}
+              loading="lazy"
+            />
+          </div>
+          <p className="text-center mt-4 text-sm" style={{ color: "var(--charcoal)" }}>
+            Trouble viewing?{" "}
+            <a
+              href="https://www.dropbox.com/scl/fo/0qogxy6k8flo3nmd59fgn/ACTFvjNPyKPeHoxClydntRQ?rlkey=x35kbk6e1b0q8gp7u91923qmz&st=maw89b1w&dl=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+              style={{ color: "var(--deep-teal)" }}
+            >
+              Open the folder on Dropbox →
+            </a>
+          </p>
+        </div>
+      </section>
+
+
+
       <Footer />
     </main>
   );
