@@ -253,7 +253,7 @@ const PatientEducation = () => {
           </div>
           <div className="max-w-5xl mx-auto rounded-xl overflow-hidden border shadow-sm bg-white" style={{ borderColor: "var(--pale-silver)" }}>
             <iframe
-              src="https://www.dropbox.com/scl/fo/0qogxy6k8flo3nmd59fgn/ACTFvjNPyKPeHoxClydntRQ?rlkey=x35kbk6e1b0q8gp7u91923qmz&st=maw89b1w&dl=0"
+              src="https://www.dropbox.com/scl/fo/0qogxy6k8flo3nmd59fgn/ACTFvjNPyKPeHoxClydntRQ?rlkey=trwdk812vw5xuml29nrouc8dg&st=u9pc6vzz&dl=0"
               title="Patient Education Dropbox Folder"
               className="w-full"
               style={{ height: "700px", border: "none" }}
@@ -263,7 +263,7 @@ const PatientEducation = () => {
           <p className="text-center mt-4 text-sm" style={{ color: "var(--charcoal)" }}>
             Trouble viewing?{" "}
             <a
-              href="https://www.dropbox.com/scl/fo/0qogxy6k8flo3nmd59fgn/ACTFvjNPyKPeHoxClydntRQ?rlkey=x35kbk6e1b0q8gp7u91923qmz&st=maw89b1w&dl=0"
+              href="https://www.dropbox.com/scl/fo/0qogxy6k8flo3nmd59fgn/ACTFvjNPyKPeHoxClydntRQ?rlkey=trwdk812vw5xuml29nrouc8dg&st=u9pc6vzz&dl=0"
               target="_blank"
               rel="noopener noreferrer"
               className="underline"
