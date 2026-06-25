@@ -251,27 +251,32 @@ const PatientEducation = () => {
               This folder mirrors Dr. Klein's Dropbox in real time — new handouts appear here automatically.
             </p>
           </div>
-          <div className="max-w-5xl mx-auto rounded-xl overflow-hidden border shadow-sm bg-white" style={{ borderColor: "var(--pale-silver)" }}>
-            <iframe
-              src="https://www.dropbox.com/scl/fo/0qogxy6k8flo3nmd59fgn/ACTFvjNPyKPeHoxClydntRQ?rlkey=trwdk812vw5xuml29nrouc8dg&st=u9pc6vzz&dl=0"
-              title="Patient Education Dropbox Folder"
-              className="w-full"
-              style={{ height: "700px", border: "none" }}
-              loading="lazy"
-            />
-          </div>
-          <p className="text-center mt-4 text-sm" style={{ color: "var(--charcoal)" }}>
-            Trouble viewing?{" "}
+          <div className="max-w-2xl mx-auto">
             <a
               href="https://www.dropbox.com/scl/fo/0qogxy6k8flo3nmd59fgn/ACTFvjNPyKPeHoxClydntRQ?rlkey=trwdk812vw5xuml29nrouc8dg&st=u9pc6vzz&dl=0"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline"
-              style={{ color: "var(--deep-teal)" }}
+              className="flex items-center gap-4 p-6 rounded-xl border shadow-sm bg-white hover:shadow-md transition-shadow"
+              style={{ borderColor: "var(--pale-silver)" }}
             >
-              Open the folder on Dropbox →
+              <div
+                className="h-14 w-14 rounded-lg flex items-center justify-center shrink-0"
+                style={{ backgroundColor: "var(--deep-teal)" }}
+              >
+                <FileText className="h-7 w-7 text-white" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-semibold text-lg" style={{ color: "var(--dark-olive)" }}>
+                  Open Patient Education Folder
+                </h3>
+                <p className="text-sm" style={{ color: "var(--charcoal)" }}>
+                  View all handouts on Dropbox (opens in a new tab)
+                </p>
+              </div>
+              <Download className="h-5 w-5 shrink-0" style={{ color: "var(--deep-teal)" }} />
             </a>
-          </p>
+          </div>
+
         </div>
       </section>
 
