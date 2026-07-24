@@ -1,7 +1,7 @@
 version: 2
 updates:
-  # Bun uses the npm ecosystem for package.json / bun.lock.
-  - package-ecosystem: "npm"
+  # Native Bun ecosystem for package.json / text-based bun.lock (Bun ≥ 1.2.5).
+  - package-ecosystem: "bun"
     directory: "/"
     schedule:
       interval: "weekly"
