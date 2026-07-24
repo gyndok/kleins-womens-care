@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { FileText } from "lucide-react";
-import consentFormsHero from "@/assets/generated/consent-forms-hero.png";
+import consentFormsHero from "@/assets/generated/consent-forms-hero.webp";
 
 const consentForms = [
   { name: "VBAC Consent", url: "https://intakeq.com/new/wquxyg" },

@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Search, FileText, Download } from "lucide-react";
-import patientEducationHero from "@/assets/generated/patient-education-hero.png";
+import patientEducationHero from "@/assets/generated/patient-education-hero.webp";
 
 interface Handout {
   title: string;

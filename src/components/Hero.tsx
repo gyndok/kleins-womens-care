@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/doctor-hero.jpg";
-import heroBgTexture from "@/assets/generated/hero-bg-texture.png";
+import heroImage from "@/assets/doctor-hero.webp";
+import heroBgTexture from "@/assets/generated/hero-bg-texture.webp";
 
 const Hero = () => {
   return (

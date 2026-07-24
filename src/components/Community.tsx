@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Baby, Camera, Heart, ArrowRight } from "lucide-react";
-import communityBg from "@/assets/generated/community-bg.png";
+import communityBg from "@/assets/generated/community-bg.webp";
 
 const Community = () => {
   return (

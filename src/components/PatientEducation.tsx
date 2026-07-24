@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Video } from "lucide-react";
-import patientEducationBanner from "@/assets/generated/patient-education-banner.png";
+import patientEducationBanner from "@/assets/generated/patient-education-banner.webp";
 
 const PatientEducation = () => {
   const videos = [
