@@ -38,6 +38,11 @@ const Appointment = () => {
                 Request an Appointment
               </a>
             </Button>
+            <Button asChild variant="outline" className="w-full mt-3" style={{ borderColor: "var(--deep-teal)", color: "var(--deep-teal)" }}>
+              <a href="https://intakeq.com/new/dr3kda" target="_blank" rel="noopener noreferrer">
+                Solicitar una cita (Español)
+              </a>
+            </Button>
           </div>
 
           <div className="rounded-2xl p-6 text-center border" style={{ borderColor: "rgba(198, 197, 185, 0.5)" }}>
