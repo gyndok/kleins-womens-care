@@ -23,7 +23,7 @@ const Appointment = () => {
             Request an Appointment
           </h1>
           <p className="text-center mb-8" style={{ color: "var(--charcoal)" }}>
-            To protect your privacy, all appointment requests are handled through our secure intake system. Please choose the form that fits your visit.
+            To protect your privacy, all appointment requests are handled through our secure intake system.
           </p>
 
           <div className="rounded-2xl p-6 mb-8" style={{ backgroundColor: "rgba(198, 197, 185, 0.2)" }}>
@@ -31,25 +31,13 @@ const Appointment = () => {
               Start Your Secure Intake
             </h2>
             <p className="text-sm mb-4" style={{ color: "var(--charcoal)" }}>
-              Please fill out the appropriate intake form. Your information is submitted directly to our HIPAA-compliant intake system.
+              Please fill out our brief appointment request form. Your information is submitted directly to our HIPAA-compliant intake system and our office will contact you to schedule your visit.
             </p>
-            <div className="flex flex-col gap-2">
-              <Button asChild className="w-full text-white" style={{ background: "linear-gradient(to right, var(--teal), var(--deep-teal))" }}>
-                <a href="https://intakeq.com/new/k3r67k" target="_blank" rel="noopener noreferrer">
-                  Obesity Clinic Intake Form
-                </a>
-              </Button>
-              <Button asChild className="w-full bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white">
-                <a href="https://intakeq.com/new/vplnkm" target="_blank" rel="noopener noreferrer">
-                  New Obstetrical Patient
-                </a>
-              </Button>
-              <Button asChild className="w-full bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white">
-                <a href="https://intakeq.com/new/6nzzu9" target="_blank" rel="noopener noreferrer">
-                  New Gyn Patient
-                </a>
-              </Button>
-            </div>
+            <Button asChild className="w-full text-white" style={{ background: "linear-gradient(to right, var(--teal), var(--deep-teal))" }}>
+              <a href="https://intakeq.com/new/stj8ub" target="_blank" rel="noopener noreferrer">
+                Request an Appointment
+              </a>
+            </Button>
           </div>
 
           <div className="rounded-2xl p-6 text-center border" style={{ borderColor: "rgba(198, 197, 185, 0.5)" }}>
