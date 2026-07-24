@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AppointmentForm from "@/components/AppointmentForm";
 import { Button } from "@/components/ui/button";
+import { Phone } from "lucide-react";
 
 const Appointment = () => {
   return (
@@ -23,16 +23,15 @@ const Appointment = () => {
             Request an Appointment
           </h1>
           <p className="text-center mb-8" style={{ color: "var(--charcoal)" }}>
-            Fill out the form below and we'll contact you to schedule your appointment.
+            To protect your privacy, all appointment requests are handled through our secure intake system. Please choose the form that fits your visit.
           </p>
 
-          {/* New patient forms */}
-          <div className="rounded-2xl p-6 mb-10" style={{ backgroundColor: "rgba(198, 197, 185, 0.2)" }}>
+          <div className="rounded-2xl p-6 mb-8" style={{ backgroundColor: "rgba(198, 197, 185, 0.2)" }}>
             <h2 className="text-lg font-bold mb-3" style={{ color: "var(--dark-olive)" }}>
-              New Patient? Start Here
+              Start Your Secure Intake
             </h2>
             <p className="text-sm mb-4" style={{ color: "var(--charcoal)" }}>
-              Please fill out the appropriate intake form:
+              Please fill out the appropriate intake form. Your information is submitted directly to our HIPAA-compliant intake system.
             </p>
             <div className="flex flex-col gap-2">
               <Button asChild className="w-full text-white" style={{ background: "linear-gradient(to right, var(--teal), var(--deep-teal))" }}>
@@ -53,17 +52,23 @@ const Appointment = () => {
             </div>
           </div>
 
-          {/* General appointment form */}
-          <h2 className="text-lg font-bold mb-4" style={{ color: "var(--dark-olive)" }}>
-            Or Request a Callback
-          </h2>
-          <AppointmentForm />
+          <div className="rounded-2xl p-6 text-center border" style={{ borderColor: "rgba(198, 197, 185, 0.5)" }}>
+            <h2 className="text-lg font-bold mb-2" style={{ color: "var(--dark-olive)" }}>
+              Prefer to speak with someone?
+            </h2>
+            <p className="text-sm mb-4" style={{ color: "var(--charcoal)" }}>
+              Call our office directly during business hours and we'll help you get scheduled.
+            </p>
+            <Button asChild size="lg" className="text-white" style={{ background: "linear-gradient(to right, var(--teal), var(--deep-teal))" }}>
+              <a href="tel:2815570300">
+                <Phone className="mr-2 h-4 w-4" />
+                (281) 557-0300
+              </a>
+            </Button>
+          </div>
 
-          <p className="text-xs mt-4 text-center" style={{ color: "var(--charcoal)" }}>
-            For urgent matters, please call{" "}
-            <a href="tel:2815570300" className="hover:underline" style={{ color: "var(--deep-teal)" }}>
-              (281) 557-0300
-            </a>
+          <p className="text-xs mt-6 text-center" style={{ color: "var(--charcoal)" }}>
+            Please do not send protected health information by email. For urgent medical matters, call 911 or go to your nearest emergency room.
           </p>
         </div>
       </section>
