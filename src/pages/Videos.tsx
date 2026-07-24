@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import videosHero from "@/assets/generated/videos-hero.png";
+import videosHero from "@/assets/generated/videos-hero.webp";
 
 const videos = [
   { id: "L7BjNZTAF_M", title: "Welcome to the Weight Loss Clinic", category: "Weight Loss" },

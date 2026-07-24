@@ -1,6 +1,6 @@
 import abogBadge from "@/assets/abog-badge.jpg";
 import acogBadge from "@/assets/acog-badge.jpeg";
-import aboutSidebar from "@/assets/generated/about-sidebar.png";
+import aboutSidebar from "@/assets/generated/about-sidebar.webp";
 
 const About = () => {
   const badges = [

@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import MochiHealth from "@/components/MochiHealth";
 import { Button } from "@/components/ui/button";
 import dabomBadge from "@/assets/dabom-badge.png";
-import weightLossHero from "@/assets/generated/weight-loss-hero.png";
+import weightLossHero from "@/assets/generated/weight-loss-hero.webp";
 
 const WeightLoss = () => {
   return (
