@@ -60,6 +60,20 @@ const Appointment = () => {
             </Button>
           </div>
 
+          <div className="rounded-2xl p-6 text-center border mt-6" style={{ borderColor: "rgba(198, 197, 185, 0.5)" }}>
+            <h2 className="text-lg font-bold mb-2" style={{ color: "var(--dark-olive)" }}>
+              Existing patient?
+            </h2>
+            <p className="text-sm mb-4" style={{ color: "var(--charcoal)" }}>
+              Access your patient portal to view records, send messages, and manage appointments through Healow.
+            </p>
+            <Button asChild size="lg" variant="outline" className="border-[var(--deep-teal)] text-[var(--deep-teal)] hover:bg-[var(--deep-teal)] hover:text-white">
+              <a href="https://healow.com/apps/provider/geffrey-klein-1466084" target="_blank" rel="noopener noreferrer">
+                Open Patient Portal
+              </a>
+            </Button>
+          </div>
+
           <p className="text-xs mt-6 text-center" style={{ color: "var(--charcoal)" }}>
             Please do not send protected health information by email. For urgent medical matters, call 911 or go to your nearest emergency room.
           </p>
