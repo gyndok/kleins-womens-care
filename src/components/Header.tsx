@@ -63,6 +63,11 @@ const Header = () => {
               </a>
             )
           )}
+          <Button asChild size="sm" variant="outline" className="border-[var(--deep-teal)] text-[var(--deep-teal)] hover:bg-[var(--deep-teal)] hover:text-white">
+            <a href="https://healow.com/apps/provider/geffrey-klein-1466084" target="_blank" rel="noopener noreferrer">
+              Patient Portal
+            </a>
+          </Button>
           <Button asChild size="sm" className="bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white">
             <Link to="/appointment">Book Appointment</Link>
           </Button>
@@ -110,6 +115,11 @@ const Header = () => {
               </a>
             )
           )}
+          <Button asChild size="sm" variant="outline" className="w-full mt-2 border-[var(--deep-teal)] text-[var(--deep-teal)] hover:bg-[var(--deep-teal)] hover:text-white">
+            <a href="https://healow.com/apps/provider/geffrey-klein-1466084" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
+              Patient Portal
+            </a>
+          </Button>
           <Button asChild size="sm" className="w-full mt-2 bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white">
             <Link to="/appointment" onClick={() => setMobileOpen(false)}>Book Appointment</Link>
           </Button>

@@ -26,6 +26,14 @@ const Footer = () => {
               <Link to="/videos" className="block text-sm hover:text-white">Patient Education</Link>
               <Link to="/appointment" className="block text-sm hover:text-white">Book Appointment</Link>
               <a
+                href="https://healow.com/apps/provider/geffrey-klein-1466084"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-sm hover:text-white"
+              >
+                Patient Portal
+              </a>
+              <a
                 href="https://www.facebook.com/groups/64781863202"
                 target="_blank"
                 rel="noopener noreferrer"
