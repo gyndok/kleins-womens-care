@@ -6,7 +6,7 @@ import { Phone } from "lucide-react";
 
 const Appointment = () => {
   return (
-    <main className="min-h-screen">
+    <main id="main-content" className="min-h-dvh">
       <Helmet>
         <title>Book an Appointment | Dr. Geffrey Klein | Webster, TX</title>
         <meta name="description" content="Schedule an appointment with Dr. Geffrey Klein, board-certified OBGYN and obesity medicine specialist in Webster, TX. New patient intake forms available." />
