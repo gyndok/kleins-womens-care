@@ -61,7 +61,7 @@ const Videos = () => {
                       <div className="aspect-video relative">
                         <img
                           src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
-                          alt={video.title}
+                          alt=""
                           className="w-full h-full object-cover"
                           loading="lazy"
                         />

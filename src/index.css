@@ -36,7 +36,7 @@
 
     /* Custom palette tokens */
     --pale-silver: #C6C5B9;
-    --teal: #62929E;
+    --teal: #4C737E; /* darkened for WCAG AA contrast on white (4.9:1) */
     --deep-teal: #4A6D7C;
     --dark-olive: #393A10;
     --charcoal: #475657;

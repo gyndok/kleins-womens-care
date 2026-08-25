@@ -6,13 +6,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-white font-bold text-lg mb-3">Geffrey H. Klein, MD, FACOG</h3>
+            <h2 className="text-white font-bold text-lg mb-3">Geffrey H. Klein, MD, FACOG</h2>
             <p className="text-sm">Women's Specialists of Clear Lake</p>
             <p className="text-sm">400 Medical Center Blvd, Suite 300</p>
             <p className="text-sm">Webster, TX 77598</p>
           </div>
           <div>
-            <h3 className="text-white font-bold text-lg mb-3">Contact</h3>
+            <h2 className="text-white font-bold text-lg mb-3">Contact</h2>
             <p className="text-sm">
               Phone: <a href="tel:2815570300" className="hover:text-white">(281) 557-0300</a>
             </p>
@@ -20,7 +20,7 @@ const Footer = () => {
             <p className="text-sm">Languages: English, Spanish</p>
           </div>
           <div>
-            <h3 className="text-white font-bold text-lg mb-3">Quick Links</h3>
+            <h2 className="text-white font-bold text-lg mb-3">Quick Links</h2>
             <div className="space-y-1">
               <Link to="/weight-loss" className="block text-sm hover:text-white">Weight Loss Clinic</Link>
               <Link to="/videos" className="block text-sm hover:text-white">Patient Education</Link>

@@ -35,7 +35,7 @@ const Contact = () => {
                 <p className="font-semibold text-sm uppercase tracking-wide mb-1" style={{ color: "var(--dark-olive)" }}>
                   Phone
                 </p>
-                <a href="tel:2815570300" className="hover:underline" style={{ color: "var(--deep-teal)" }}>
+                <a href="tel:2815570300" className="underline" style={{ color: "var(--deep-teal)" }}>
                   (281) 557-0300
                 </a>
                 <p className="text-xs mt-1">*Please call if you are a self-pay patient</p>
