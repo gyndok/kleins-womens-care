@@ -29,7 +29,14 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[var(--pale-silver)]">
-      <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-2 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:outline focus:outline-2 focus:outline-[var(--deep-teal)]"
+        style={{ color: "var(--deep-teal)" }}
+      >
+        Skip to main content
+      </a>
+      <nav aria-label="Main navigation" className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="text-xl font-bold" style={{ color: "var(--deep-teal)" }}>
           Dr. Klein
         </Link>
@@ -75,10 +82,12 @@ const Header = () => {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden"
+          className="md:hidden inline-flex min-h-11 min-w-11 items-center justify-center"
           style={{ color: "var(--charcoal)" }}
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
+          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-menu"
         >
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -86,7 +95,7 @@ const Header = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-[var(--pale-silver)] bg-white px-4 pb-4">
+        <div id="mobile-menu" className="md:hidden border-t border-[var(--pale-silver)] bg-white px-4 pb-4">
           {navItems.map((item) =>
             item.href.startsWith("/") ? (
               <Link

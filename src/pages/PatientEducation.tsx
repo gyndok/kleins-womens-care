@@ -88,7 +88,7 @@ const PatientEducation = () => {
     : categories.filter((cat) => filtered.some((h) => h.category === cat));
 
   return (
-    <main className="min-h-screen">
+    <main id="main-content" className="min-h-dvh">
       <Helmet>
         <title>Patient Education Library | Dr. Geffrey Klein | Webster, TX</title>
         <meta

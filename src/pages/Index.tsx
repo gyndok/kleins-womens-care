@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main id="main-content" className="min-h-dvh">
       <Helmet>
         <title>Dr. Geffrey Klein | OBGYN & Obesity Medicine | Webster, TX</title>
         <meta name="description" content="Board-certified OBGYN and obesity medicine specialist providing comprehensive women's health and weight management in Clear Lake and Webster, Texas." />

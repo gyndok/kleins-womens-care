@@ -8,7 +8,7 @@ import weightLossHero from "@/assets/generated/weight-loss-hero.webp";
 
 const WeightLoss = () => {
   return (
-    <main className="min-h-screen">
+    <main id="main-content" className="min-h-dvh">
       <Helmet>
         <title>Weight Loss Clinic | Dr. Geffrey Klein | Webster, TX</title>
         <meta name="description" content="Board-certified obesity medicine weight loss clinic in Webster, TX. GLP-1 medications, personalized plans, and telemedicine options through Mochi Health." />

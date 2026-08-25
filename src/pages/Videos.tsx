@@ -17,7 +17,7 @@ const categories = [...new Set(videos.map((v) => v.category))];
 
 const Videos = () => {
   return (
-    <main className="min-h-screen">
+    <main id="main-content" className="min-h-dvh">
       <Helmet>
         <title>Patient Education Videos | Dr. Geffrey Klein | Webster, TX</title>
         <meta name="description" content="Watch educational videos about women's health, surgical procedures, and weight loss from Dr. Geffrey Klein, board-certified OBGYN in Webster, TX." />
@@ -61,7 +61,7 @@ const Videos = () => {
                       <div className="aspect-video relative">
                         <img
                           src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
-                          alt={video.title}
+                          alt=""
                           className="w-full h-full object-cover"
                           loading="lazy"
                         />

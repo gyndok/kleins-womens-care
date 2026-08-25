@@ -23,7 +23,7 @@ const consentForms = [
 
 const ConsentForms = () => {
   return (
-    <main className="min-h-screen">
+    <main id="main-content" className="min-h-dvh">
       <Helmet>
         <title>Consent Forms | Dr. Geffrey Klein | Webster, TX</title>
         <meta name="description" content="Complete your consent forms online before your appointment with Dr. Geffrey Klein. Forms for surgical procedures, IUD, hormone therapy, and more." />
