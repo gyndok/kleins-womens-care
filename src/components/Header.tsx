@@ -95,7 +95,7 @@ const Header = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-[var(--pale-silver)] bg-white px-4 pb-4">
+        <div id="mobile-menu" className="md:hidden border-t border-[var(--pale-silver)] bg-white px-4 pb-4">
           {navItems.map((item) =>
             item.href.startsWith("/") ? (
               <Link
