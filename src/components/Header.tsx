@@ -19,11 +19,14 @@ const Header = () => {
     { label: "Services", href: isHome ? "#services" : "/#services" },
     { label: "Weight Loss", href: "/weight-loss" },
     { label: "Videos", href: "/videos" },
+    { label: "Reviews", href: isHome ? "#reviews" : "/#reviews" },
+    { label: "Contact", href: isHome ? "#contact" : "/#contact" },
+  ];
+
+  const patientResources = [
     { label: "Patient Education", href: "/patient-education" },
     { label: "Due Date Calculator", href: "/pregnancy-calculator" },
     { label: "Consent Forms", href: "/consent-forms" },
-    { label: "Reviews", href: isHome ? "#reviews" : "/#reviews" },
-    { label: "Contact", href: isHome ? "#contact" : "/#contact" },
   ];
 
   const handleNavClick = (href: string) => {
