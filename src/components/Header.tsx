@@ -157,6 +157,20 @@ const Header = () => {
               </a>
             )
           )}
+          <div className="py-2 text-sm font-medium" style={{ color: "var(--charcoal)" }}>
+            Patient Resources
+          </div>
+          {patientResources.map((item) => (
+            <Link
+              key={item.label}
+              to={item.href}
+              className="block py-1.5 pl-4 text-sm"
+              style={{ color: "var(--charcoal)" }}
+              onClick={() => setMobileOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
           <Button asChild size="sm" variant="outline" className="w-full mt-2 border-[var(--deep-teal)] text-[var(--deep-teal)] hover:bg-[var(--deep-teal)] hover:text-white">
             <a href="https://healow.com/apps/provider/geffrey-klein-1466084" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
               Patient Portal
