@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -13,11 +19,14 @@ const Header = () => {
     { label: "Services", href: isHome ? "#services" : "/#services" },
     { label: "Weight Loss", href: "/weight-loss" },
     { label: "Videos", href: "/videos" },
+    { label: "Reviews", href: isHome ? "#reviews" : "/#reviews" },
+    { label: "Contact", href: isHome ? "#contact" : "/#contact" },
+  ];
+
+  const patientResources = [
     { label: "Patient Education", href: "/patient-education" },
     { label: "Due Date Calculator", href: "/pregnancy-calculator" },
     { label: "Consent Forms", href: "/consent-forms" },
-    { label: "Reviews", href: isHome ? "#reviews" : "/#reviews" },
-    { label: "Contact", href: isHome ? "#contact" : "/#contact" },
   ];
 
   const handleNavClick = (href: string) => {
@@ -71,6 +80,29 @@ const Header = () => {
               </a>
             )
           )}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button
+                className="text-sm font-medium transition-colors hover:opacity-80 inline-flex items-center gap-1"
+                style={{ color: "var(--charcoal)" }}
+                aria-haspopup="menu"
+              >
+                Patient Resources <ChevronDown className="h-4 w-4" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-48">
+              {patientResources.map((item) => (
+                <DropdownMenuItem key={item.label} asChild>
+                  <Link
+                    to={item.href}
+                    className="cursor-pointer"
+                  >
+                    {item.label}
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Button asChild size="sm" variant="outline" className="border-[var(--deep-teal)] text-[var(--deep-teal)] hover:bg-[var(--deep-teal)] hover:text-white">
             <a href="https://healow.com/apps/provider/geffrey-klein-1466084" target="_blank" rel="noopener noreferrer">
               Patient Portal
@@ -125,6 +157,20 @@ const Header = () => {
               </a>
             )
           )}
+          <div className="py-2 text-sm font-medium" style={{ color: "var(--charcoal)" }}>
+            Patient Resources
+          </div>
+          {patientResources.map((item) => (
+            <Link
+              key={item.label}
+              to={item.href}
+              className="block py-1.5 pl-4 text-sm"
+              style={{ color: "var(--charcoal)" }}
+              onClick={() => setMobileOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
           <Button asChild size="sm" variant="outline" className="w-full mt-2 border-[var(--deep-teal)] text-[var(--deep-teal)] hover:bg-[var(--deep-teal)] hover:text-white">
             <a href="https://healow.com/apps/provider/geffrey-klein-1466084" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
               Patient Portal
