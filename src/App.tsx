@@ -12,6 +12,7 @@ const Videos = lazy(() => import("./pages/Videos"));
 const Appointment = lazy(() => import("./pages/Appointment"));
 const ConsentForms = lazy(() => import("./pages/ConsentForms"));
 const PatientEducation = lazy(() => import("./pages/PatientEducation"));
+const PregnancyCalculator = lazy(() => import("./pages/PregnancyCalculator"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -31,6 +32,8 @@ const App = () => (
               <Route path="/appointment" element={<Appointment />} />
               <Route path="/consent-forms" element={<ConsentForms />} />
               <Route path="/patient-education" element={<PatientEducation />} />
+              <Route path="/pregnancy-calculator" element={<PregnancyCalculator />} />
+
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

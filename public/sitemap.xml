@@ -26,6 +26,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://geffreyklein.com/pregnancy-calculator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://geffreyklein.com/consent-forms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
