@@ -12,6 +12,7 @@ const Videos = lazy(() => import("./pages/Videos"));
 const Appointment = lazy(() => import("./pages/Appointment"));
 const ConsentForms = lazy(() => import("./pages/ConsentForms"));
 const PatientEducation = lazy(() => import("./pages/PatientEducation"));
+const PregnancyCalculator = lazy(() => import("./pages/PregnancyCalculator"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
