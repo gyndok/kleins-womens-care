@@ -80,6 +80,29 @@ const Header = () => {
               </a>
             )
           )}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button
+                className="text-sm font-medium transition-colors hover:opacity-80 inline-flex items-center gap-1"
+                style={{ color: "var(--charcoal)" }}
+                aria-haspopup="menu"
+              >
+                Patient Resources <ChevronDown className="h-4 w-4" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-48">
+              {patientResources.map((item) => (
+                <DropdownMenuItem key={item.label} asChild>
+                  <Link
+                    to={item.href}
+                    className="cursor-pointer"
+                  >
+                    {item.label}
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Button asChild size="sm" variant="outline" className="border-[var(--deep-teal)] text-[var(--deep-teal)] hover:bg-[var(--deep-teal)] hover:text-white">
             <a href="https://healow.com/apps/provider/geffrey-klein-1466084" target="_blank" rel="noopener noreferrer">
               Patient Portal
