@@ -17,7 +17,7 @@ const categories = [...new Set(videos.map((v) => v.category))];
 
 const Videos = () => {
   return (
-    <main id="main-content" className="min-h-dvh">
+    <>
       <Helmet>
         <title>Patient Education Videos | Dr. Geffrey Klein | Webster, TX</title>
         <meta name="description" content="Watch educational videos about women's health, surgical procedures, and weight loss from Dr. Geffrey Klein, board-certified OBGYN in Webster, TX." />
@@ -27,14 +27,15 @@ const Videos = () => {
         <meta property="og:url" content="https://geffreyklein.com/videos" />
       </Helmet>
       <Header />
+      <main id="main-content" tabIndex={-1} className="min-h-dvh">
 
       {/* Hero */}
       <section className="py-28 text-white relative overflow-hidden" style={{ background: "linear-gradient(135deg, var(--teal), var(--deep-teal))" }}>
         <div className="absolute inset-0" style={{ backgroundImage: `url(${videosHero})`, backgroundSize: "cover", backgroundPosition: "center 50%" }} />
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(30, 80, 90, 0.55)" }} />
+        <div className="absolute inset-0" style={{ backgroundColor: "rgba(15, 45, 55, 0.85)" }} />
         <div className="container mx-auto px-4 max-w-3xl text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Patient Education Videos</h1>
-          <p className="text-xl text-white/80">Educational resources to help you understand your care</p>
+          <p className="text-xl text-white">Educational resources to help you understand your care</p>
         </div>
       </section>
 
@@ -105,8 +106,9 @@ const Videos = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
-    </main>
+    </>
   );
 };
 

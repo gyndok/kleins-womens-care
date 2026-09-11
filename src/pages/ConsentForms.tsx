@@ -23,7 +23,7 @@ const consentForms = [
 
 const ConsentForms = () => {
   return (
-    <main id="main-content" className="min-h-dvh">
+    <>
       <Helmet>
         <title>Consent Forms | Dr. Geffrey Klein | Webster, TX</title>
         <meta name="description" content="Complete your consent forms online before your appointment with Dr. Geffrey Klein. Forms for surgical procedures, IUD, hormone therapy, and more." />
@@ -33,14 +33,15 @@ const ConsentForms = () => {
         <meta property="og:url" content="https://geffreyklein.com/consent-forms" />
       </Helmet>
       <Header />
+      <main id="main-content" tabIndex={-1} className="min-h-dvh">
 
       {/* Hero */}
       <section className="py-20 text-white relative overflow-hidden" style={{ background: "linear-gradient(135deg, var(--teal), var(--deep-teal))" }}>
         <div className="absolute inset-0" style={{ backgroundImage: `url(${consentFormsHero})`, backgroundSize: "cover", backgroundPosition: "center" }} />
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(30, 80, 90, 0.55)" }} />
+        <div className="absolute inset-0" style={{ backgroundColor: "rgba(15, 45, 55, 0.85)" }} />
         <div className="container mx-auto px-4 max-w-3xl text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Consent Forms</h1>
-          <p className="text-xl text-white/80">Please complete the appropriate form prior to your procedure or appointment</p>
+          <p className="text-xl text-white">Please complete the appropriate form prior to your procedure or appointment</p>
         </div>
       </section>
 
@@ -73,8 +74,9 @@ const ConsentForms = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
-    </main>
+    </>
   );
 };
 

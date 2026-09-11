@@ -4,7 +4,7 @@ import { ArrowRight, Check, Users, Copy } from "lucide-react";
 
 const MochiHealth = () => {
   const [billingCycle, setBillingCycle] = useState<"1" | "3" | "12">("1");
-  const [copied, setCopied] = useState(false);
+  const [copyMessage, setCopyMessage] = useState("");
 
   const pricing = {
     "1": { label: "1 Month", price: "$79", period: "/mo" },
@@ -25,10 +25,13 @@ const MochiHealth = () => {
     { name: "Treatments across skincare, hair growth, and more", price: "" },
   ];
 
-  const handleCopyCode = () => {
-    navigator.clipboard.writeText("y7uo2n");
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  const handleCopyCode = async () => {
+    try {
+      await navigator.clipboard.writeText("y7uo2n");
+      setCopyMessage("Copied to clipboard!");
+    } catch {
+      setCopyMessage("Unable to copy. Select and copy the code y7uo2n.");
+    }
   };
 
   const selected = pricing[billingCycle];
@@ -57,14 +60,17 @@ const MochiHealth = () => {
             {/* Billing Toggle */}
             <div className="flex justify-center mb-8">
               <div
-                className="inline-flex rounded-full p-1"
+                role="group" aria-label="Billing period"
+                className="inline-flex flex-wrap justify-center rounded-full p-1"
                 style={{ backgroundColor: "rgba(198, 197, 185, 0.3)" }}
               >
                 {(["1", "3", "12"] as const).map((cycle) => (
                   <button
                     key={cycle}
+                    aria-pressed={billingCycle === cycle}
+                    aria-controls="membership-price"
                     onClick={() => setBillingCycle(cycle)}
-                    className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
+                    className={`px-3 sm:px-5 py-2 rounded-full text-sm font-medium transition-all ${
                       billingCycle === cycle ? "text-white shadow-sm" : ""
                     }`}
                     style={
@@ -80,7 +86,7 @@ const MochiHealth = () => {
             </div>
 
             {/* Price Display */}
-            <div className="text-center mb-8">
+            <div id="membership-price" role="status" aria-live="polite" aria-atomic="true" className="text-center mb-8">
               <div className="flex items-baseline justify-center gap-1">
                 <span className="text-5xl font-bold" style={{ color: "var(--dark-olive)" }}>
                   {selected.price}
@@ -173,14 +179,12 @@ const MochiHealth = () => {
             <p className="text-white text-sm font-semibold mt-3">
               Save $40 on your first month
             </p>
-            <p className="text-white/90 text-xs mt-1 leading-relaxed">
+            <p className="text-white text-xs mt-1 leading-relaxed">
               New patients get a $40 discount on their first health subscription
               when you apply my code at checkout. You'll stay on my panel for
               continuity of care.
             </p>
-            {copied && (
-              <p className="text-white/80 text-xs mt-2">Copied to clipboard!</p>
-            )}
+            <p role="status" aria-live="polite" className="text-white text-sm mt-2">{copyMessage}</p>
           </div>
 
           {/* CTA */}
@@ -188,7 +192,7 @@ const MochiHealth = () => {
             <Button
               asChild
               size="lg"
-              className="bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white px-8 gap-2"
+              className="bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white px-4 sm:px-8 gap-2 h-auto min-h-11 whitespace-normal"
             >
               <a href="https://joinmochi.com" target="_blank" rel="noopener noreferrer">
                 Sign Up at Mochi Health

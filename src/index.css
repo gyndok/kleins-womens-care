@@ -71,3 +71,22 @@
     scroll-behavior: smooth;
   }
 }
+
+/* Keyboard focus remains visible on both light and dark surfaces. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid #173b49 !important;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px #fff !important;
+}
+main:focus { outline: none; }
+[id], h1 { scroll-margin-top: 7rem; }
+a, button { touch-action: manipulation; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

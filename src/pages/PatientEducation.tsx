@@ -20,7 +20,7 @@ const handouts: Handout[] = [
   { title: "Lynch Syndrome Screening", file: "Lynch-Syndrome-Screening.pdf", category: "Gynecology" },
   { title: "PMDD (Premenstrual Dysphoric Disorder)", file: "PMDD.pdf", category: "Gynecology" },
   { title: "Postpartum Depression", file: "Postpartum-Depression.pdf", category: "Gynecology" },
-  { title: "Hair Loss in Women", file: "Understanding_Hair_Loss_in_Women_A_Patient_Guide.pdf", category: "Gynecology" },
+  { title: "Hair Loss in Women", file: "hair-loss-in-women.html", category: "Gynecology" },
 
   // Menopause & HRT
   { title: "Genitourinary Syndrome of Menopause (Non-Hormonal Options)", file: "gsm-nonhormonal.pdf", category: "Menopause & HRT" },
@@ -88,7 +88,7 @@ const PatientEducation = () => {
     : categories.filter((cat) => filtered.some((h) => h.category === cat));
 
   return (
-    <main id="main-content" className="min-h-dvh">
+    <>
       <Helmet>
         <title>Patient Education Library | Dr. Geffrey Klein | Webster, TX</title>
         <meta
@@ -104,14 +104,15 @@ const PatientEducation = () => {
         <meta property="og:url" content="https://geffreyklein.com/patient-education" />
       </Helmet>
       <Header />
+      <main id="main-content" tabIndex={-1} className="min-h-dvh">
 
       {/* Hero */}
       <section className="py-20 text-white relative overflow-hidden" style={{ background: "linear-gradient(135deg, var(--teal), var(--deep-teal))" }}>
         <div className="absolute inset-0" style={{ backgroundImage: `url(${patientEducationHero})`, backgroundSize: "cover", backgroundPosition: "center" }} />
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(30, 80, 90, 0.55)" }} />
+        <div className="absolute inset-0" style={{ backgroundColor: "rgba(15, 45, 55, 0.85)" }} />
         <div className="container mx-auto px-4 max-w-3xl text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Patient Education Library</h1>
-          <p className="text-xl text-white/80">Trusted resources to help you navigate your health journey</p>
+          <p className="text-xl text-white">Trusted resources to help you navigate your health journey</p>
         </div>
       </section>
 
@@ -124,6 +125,7 @@ const PatientEducation = () => {
             Browse and download educational handouts to learn more about your health and treatment options.
           </p>
 
+          <label htmlFor="handout-search" className="block max-w-md mx-auto mb-2 font-medium">Search handouts</label>
           {/* Search bar */}
           <div className="max-w-md mx-auto mb-8 relative">
             <Search
@@ -131,7 +133,9 @@ const PatientEducation = () => {
               style={{ color: "var(--charcoal)" }}
             />
             <input
-              type="text"
+              id="handout-search"
+              type="search"
+              aria-controls="handout-results"
               placeholder="Search handouts..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
@@ -145,8 +149,10 @@ const PatientEducation = () => {
           </div>
 
           {/* Category filter pills */}
-          <div className="flex flex-wrap justify-center gap-2 mb-12">
+          <div role="group" aria-label="Filter handouts by category" className="flex flex-wrap justify-center gap-2 mb-6">
             <button
+              aria-pressed={activeCategory === null}
+              aria-controls="handout-results"
               onClick={() => setActiveCategory(null)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 !activeCategory
@@ -164,6 +170,8 @@ const PatientEducation = () => {
             {categories.map((cat) => (
               <button
                 key={cat}
+                aria-pressed={activeCategory === cat}
+                aria-controls="handout-results"
                 onClick={() => setActiveCategory(activeCategory === cat ? null : cat)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                   activeCategory === cat
@@ -181,6 +189,10 @@ const PatientEducation = () => {
             ))}
           </div>
 
+          <p role="status" aria-live="polite" aria-atomic="true" className="text-center mb-8">
+            {filtered.length} {filtered.length === 1 ? "handout" : "handouts"} found{activeCategory ? ` in ${activeCategory}` : ""}.
+          </p>
+          <div id="handout-results">
           {/* Results */}
           {filtered.length === 0 ? (
             <p className="text-center py-12" style={{ color: "var(--charcoal)" }}>
@@ -223,7 +235,7 @@ const PatientEducation = () => {
                             className="text-xs mt-1 inline-block"
                             style={{ color: "var(--charcoal)" }}
                           >
-                            PDF
+                            {handout.file.endsWith(".html") ? "Read online · PDF available" : "PDF"}
                           </span>
                         </div>
                         <Download
@@ -237,6 +249,7 @@ const PatientEducation = () => {
               );
             })
           )}
+          </div>
         </div>
       </section>
 
@@ -282,8 +295,9 @@ const PatientEducation = () => {
 
 
 
+      </main>
       <Footer />
-    </main>
+    </>
   );
 };
 

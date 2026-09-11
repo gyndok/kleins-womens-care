@@ -5,7 +5,7 @@ import communityBg from "@/assets/generated/community-bg.webp";
 const Community = () => {
   return (
     <section className="py-20 relative overflow-hidden" style={{ backgroundImage: `url(${communityBg})`, backgroundSize: "cover", backgroundPosition: "center" }}>
-      <div className="absolute inset-0 bg-white/88" />
+      <div className="absolute inset-0 bg-white/[0.92]" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <div
@@ -47,7 +47,7 @@ const Community = () => {
           <Button
             asChild
             size="lg"
-            className="bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white px-8 gap-2"
+            className="bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white px-4 sm:px-8 gap-2 h-auto min-h-11 whitespace-normal"
           >
             <a
               href="https://www.facebook.com/groups/64781863202"

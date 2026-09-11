@@ -6,7 +6,7 @@ import heroBgTexture from "@/assets/generated/hero-bg-texture.webp";
 const Hero = () => {
   return (
     <section className="relative min-h-[500px] flex items-center overflow-hidden" style={{ background: "linear-gradient(135deg, #fff 0%, #e8e7e0 100%)" }}>
-      <div className="absolute inset-0" style={{ backgroundImage: `url(${heroBgTexture})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.25 }} />
+      <div className="absolute inset-0" style={{ backgroundImage: `url(${heroBgTexture})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.08 }} />
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Text side */}

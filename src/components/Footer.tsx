@@ -23,7 +23,7 @@ const Footer = () => {
             <h2 className="text-white font-bold text-lg mb-3">Quick Links</h2>
             <div className="space-y-1">
               <Link to="/weight-loss" className="block text-sm hover:text-white">Weight Loss Clinic</Link>
-              <Link to="/videos" className="block text-sm hover:text-white">Patient Education</Link>
+              <Link to="/patient-education" className="block text-sm hover:text-white">Patient Education</Link>
               <Link to="/pregnancy-calculator" className="block text-sm hover:text-white">Due Date Calculator</Link>
               <Link to="/appointment" className="block text-sm hover:text-white">Book Appointment</Link>
               <a
@@ -45,6 +45,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <p className="mt-8 text-sm">Having trouble using this website or a handout? Call <a className="underline" href="tel:2815570300">(281) 557-0300</a> and tell our office what you need help accessing.</p>
         <div className="border-t mt-8 pt-8 text-sm text-center" style={{ borderColor: "var(--charcoal)" }}>
           &copy; {new Date().getFullYear()} Geffrey H. Klein, MD. All rights reserved.
         </div>

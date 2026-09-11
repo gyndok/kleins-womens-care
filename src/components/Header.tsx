@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -11,7 +11,23 @@ import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const menuButton = useRef<HTMLButtonElement>(null);
   const location = useLocation();
+
+  useEffect(() => {
+    if (location.key === "default" && !location.hash) return;
+    const frame = requestAnimationFrame(() => {
+      const target = location.hash
+        ? document.getElementById(location.hash.slice(1))
+        : document.querySelector<HTMLElement>("main h1");
+      if (target) {
+        target.tabIndex = -1;
+        target.focus({ preventScroll: true });
+        target.scrollIntoView({ behavior: "instant", block: "start" });
+      }
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [location.key, location.hash]);
   const isHome = location.pathname === "/";
 
   const navItems = [
@@ -33,12 +49,21 @@ const Header = () => {
     setMobileOpen(false);
     if (href.startsWith("#")) {
       const el = document.querySelector(href);
-      el?.scrollIntoView({ behavior: "smooth" });
+      if (el instanceof HTMLElement) {
+        el.tabIndex = -1;
+        el.focus({ preventScroll: true });
+        el.scrollIntoView({ behavior: "instant" });
+      }
     }
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[var(--pale-silver)]">
+    <header onKeyDown={(event) => {
+      if (event.key === "Escape" && mobileOpen) {
+        setMobileOpen(false);
+        menuButton.current?.focus();
+      }
+    }} className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[var(--pale-silver)]">
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-2 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:outline focus:outline-2 focus:outline-[var(--deep-teal)]"
@@ -52,7 +77,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden xl:flex items-center gap-6">
           {navItems.map((item) =>
             item.href.startsWith("/") ? (
               <Link
@@ -115,7 +140,9 @@ const Header = () => {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden inline-flex min-h-11 min-w-11 items-center justify-center"
+          ref={menuButton}
+          className="xl:hidden inline-flex min-h-11 min-w-11 items-center justify-center"
+          type="button"
           style={{ color: "var(--charcoal)" }}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
@@ -128,7 +155,7 @@ const Header = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div id="mobile-menu" className="md:hidden border-t border-[var(--pale-silver)] bg-white px-4 pb-4">
+        <div id="mobile-menu" className="xl:hidden max-h-[calc(100dvh-5rem)] overflow-y-auto border-t border-[var(--pale-silver)] bg-white px-4 pb-4">
           {navItems.map((item) =>
             item.href.startsWith("/") ? (
               <Link

@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <main id="main-content" className="min-h-dvh">
+    <>
       <Helmet>
         <title>Dr. Geffrey Klein | OBGYN & Obesity Medicine | Webster, TX</title>
         <meta name="description" content="Board-certified OBGYN and obesity medicine specialist providing comprehensive women's health and weight management in Clear Lake and Webster, Texas." />
@@ -21,6 +21,7 @@ const Index = () => {
         <meta property="og:url" content="https://geffreyklein.com/" />
       </Helmet>
       <Header />
+      <main id="main-content" tabIndex={-1} className="min-h-dvh">
       <Hero />
       <InterviewVideo />
       <About />
@@ -28,8 +29,9 @@ const Index = () => {
       <Reviews />
       <Community />
       <Contact />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 };
 

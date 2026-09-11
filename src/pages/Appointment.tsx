@@ -6,7 +6,7 @@ import { Phone } from "lucide-react";
 
 const Appointment = () => {
   return (
-    <main id="main-content" className="min-h-dvh">
+    <>
       <Helmet>
         <title>Book an Appointment | Dr. Geffrey Klein | Webster, TX</title>
         <meta name="description" content="Schedule an appointment with Dr. Geffrey Klein, board-certified OBGYN and obesity medicine specialist in Webster, TX. New patient intake forms available." />
@@ -16,6 +16,7 @@ const Appointment = () => {
         <meta property="og:url" content="https://geffreyklein.com/appointment" />
       </Helmet>
       <Header />
+      <main id="main-content" tabIndex={-1} className="min-h-dvh">
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-2xl">
@@ -39,7 +40,7 @@ const Appointment = () => {
               </a>
             </Button>
             <Button asChild variant="outline" className="w-full mt-3" style={{ borderColor: "var(--deep-teal)", color: "var(--deep-teal)" }}>
-              <a href="https://intakeq.com/new/dr3kda" target="_blank" rel="noopener noreferrer">
+              <a lang="es" href="https://intakeq.com/new/dr3kda" target="_blank" rel="noopener noreferrer">
                 Solicitar una cita (Español)
               </a>
             </Button>
@@ -80,8 +81,9 @@ const Appointment = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
-    </main>
+    </>
   );
 };
 

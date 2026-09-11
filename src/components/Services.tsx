@@ -87,7 +87,7 @@ const Services = () => {
               </h3>
               <p
                 className="text-sm"
-                style={{ color: service.featured ? "rgba(255,255,255,0.8)" : "var(--charcoal)" }}
+                style={{ color: service.featured ? "#fff" : "var(--charcoal)" }}
               >
                 {service.description}
               </p>
