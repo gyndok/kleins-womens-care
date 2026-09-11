@@ -1,0 +1,13 @@
+# Serve React Router entrypoints on direct visits and refreshes.
+/weight-loss /index.html 200
+/weight-loss/ /index.html 200
+/videos /index.html 200
+/videos/ /index.html 200
+/appointment /index.html 200
+/appointment/ /index.html 200
+/consent-forms /index.html 200
+/consent-forms/ /index.html 200
+/patient-education /index.html 200
+/patient-education/ /index.html 200
+/pregnancy-calculator /index.html 200
+/pregnancy-calculator/ /index.html 200
