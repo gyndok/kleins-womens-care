@@ -1,7 +1,8 @@
 # Geffrey Klein, MD — Practice Website
 
 Marketing and patient-facing website for Geffrey H. Klein, MD (OBGYN &
-Obesity Medicine) in Webster, TX. Built on Lovable and hosted at
+Obesity Medicine) in Webster, TX. Originally built on Lovable, now hosted
+with Sites at
 [geffreyklein.com](https://geffreyklein.com).
 
 All rights reserved. This repository is public for transparency and
@@ -24,7 +25,7 @@ collaboration only; no open-source license is granted at this time.
 - Node.js 20+ is only needed if you want to run ancillary tooling; the
   app itself is built and served entirely by Bun + Vite
 
-Do not commit a `package-lock.json`. This repo uses `bun.lockb`
+Do not commit a `package-lock.json`. This repo uses `bun.lock`
 exclusively; committing an npm lockfile causes drift.
 
 ## Setup
@@ -63,12 +64,35 @@ managed through the Lovable dashboard, not committed to the repository.
 
 ## Deployment
 
-The site is published through Lovable. Open the project in Lovable and
-use **Share → Publish**. The published origin is
-`https://geffreyklein.com`; the sitemap and `robots.txt` reference that
-domain.
+The site is hosted with Sites. Its canonical domain is
+`https://geffreyklein.com`, with `https://www.geffreyklein.com` also configured.
+The Sites address is https://geffrey-klein.gyndok.chatgpt.site.
+The sitemap, canonical links, and `robots.txt` retain the custom domain.
 
-Every push to `main` syncs bidirectionally with Lovable.
+To publish an update:
+
+1. Start from the latest GitHub source and install dependencies with
+   `bun install --frozen-lockfile`.
+2. Make changes and run `bun run build`. Check affected pages and links.
+3. Use the Sites hosting workflow in Codex to publish to the existing Site
+   identified by `.openai/hosting.json`. The workflow pushes the exact source
+   to the Sites source repository, packages `dist/`, saves a version, and
+   deploys it. Reuse the existing Site; do not create a replacement.
+4. Confirm deployment success and keep this GitHub repository updated with
+   the published source changes.
+
+GitHub and Sites use separate source repositories. A push to GitHub alone
+does not deploy to Sites. The previous Lovable integration may still sync
+GitHub changes, but Lovable publishing no longer updates the domain's Sites
+deployment.
+
+`.openai/hosting.json` selects the existing Site and the static `dist/`
+output. `public/_redirects` preserves direct visits and refreshes for the
+React Router pages; update it when adding routes. Keep deployment credentials
+out of Git.
+
+DNS is managed in Squarespace. Preserve email records when changing website
+DNS; Google Workspace and the outgoing-email service use separate records.
 
 ## Project structure
 
@@ -81,6 +105,7 @@ src/
     supabase/         Auto-generated client + types (do not edit)
   assets/             Images bundled into the build
 public/               robots.txt, sitemap.xml, llms.txt, static files
+.openai/hosting.json   Existing Sites project and static output configuration
 supabase/             Config for Lovable Cloud (currently dormant)
 ```
 
