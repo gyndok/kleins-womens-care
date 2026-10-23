@@ -194,8 +194,8 @@ const MochiHealth = () => {
               size="lg"
               className="bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white px-4 sm:px-8 gap-2 h-auto min-h-11 whitespace-normal"
             >
-              <a href="https://joinmochi.com" target="_blank" rel="noopener noreferrer">
-                Sign Up at Mochi Health
+              <a href="https://joinmochi.com/providers/geffrey-klein-y7uo2n?state=Texas&amp;q=klein&amp;src=directory" target="_blank" rel="noopener noreferrer">
+                View Dr. Klein on Mochi Health
                 <ArrowRight className="w-4 h-4" />
               </a>
             </Button>
