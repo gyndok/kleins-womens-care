@@ -8,11 +8,11 @@ const Appointment = () => {
   return (
     <>
       <Helmet>
-        <title>Book an Appointment | Dr. Geffrey Klein | Webster, TX</title>
-        <meta name="description" content="Schedule an appointment with Dr. Geffrey Klein, board-certified OBGYN and obesity medicine specialist in Webster, TX. New patient intake forms available." />
+        <title>Contact the Office | Dr. Geffrey Klein | Webster, TX</title>
+        <meta name="description" content="Contact Dr. Geffrey Klein’s office in Webster, TX, or access the existing-patient portal." />
         <link rel="canonical" href="https://geffreyklein.com/appointment" />
-        <meta property="og:title" content="Book an Appointment | Dr. Geffrey Klein" />
-        <meta property="og:description" content="Schedule an appointment with Dr. Klein, board-certified OBGYN in Webster, TX." />
+        <meta property="og:title" content="Contact the Office | Dr. Geffrey Klein" />
+        <meta property="og:description" content="Contact Dr. Klein’s office or access the existing-patient portal." />
         <meta property="og:url" content="https://geffreyklein.com/appointment" />
       </Helmet>
       <Header />
@@ -21,37 +21,18 @@ const Appointment = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-2xl">
           <h1 className="text-4xl font-bold mb-4 text-center" style={{ color: "var(--dark-olive)" }}>
-            Request an Appointment
+            Contact the Office
           </h1>
           <p className="text-center mb-8" style={{ color: "var(--charcoal)" }}>
-            To protect your privacy, all appointment requests are handled through our secure intake system.
+            Dr. Klein will retire from private practice on February 2, 2027. Please contact the office with questions about your care.
           </p>
-
-          <div className="rounded-2xl p-6 mb-8" style={{ backgroundColor: "rgba(198, 197, 185, 0.2)" }}>
-            <h2 className="text-lg font-bold mb-3" style={{ color: "var(--dark-olive)" }}>
-              Start Your Secure Intake
-            </h2>
-            <p className="text-sm mb-4" style={{ color: "var(--charcoal)" }}>
-              Please fill out our brief appointment request form. Your information is submitted directly to our HIPAA-compliant intake system and our office will contact you to schedule your visit.
-            </p>
-            <Button asChild className="w-full text-white" style={{ background: "linear-gradient(to right, var(--teal), var(--deep-teal))" }}>
-              <a href="https://intakeq.com/new/stj8ub" target="_blank" rel="noopener noreferrer">
-                Request an Appointment
-              </a>
-            </Button>
-            <Button asChild variant="outline" className="w-full mt-3" style={{ borderColor: "var(--deep-teal)", color: "var(--deep-teal)" }}>
-              <a lang="es" href="https://intakeq.com/new/dr3kda" target="_blank" rel="noopener noreferrer">
-                Solicitar una cita (Español)
-              </a>
-            </Button>
-          </div>
 
           <div className="rounded-2xl p-6 text-center border" style={{ borderColor: "rgba(198, 197, 185, 0.5)" }}>
             <h2 className="text-lg font-bold mb-2" style={{ color: "var(--dark-olive)" }}>
-              Prefer to speak with someone?
+              Call the Office
             </h2>
             <p className="text-sm mb-4" style={{ color: "var(--charcoal)" }}>
-              Call our office directly during business hours and we'll help you get scheduled.
+              For questions about your care or appointments, please call during business hours.
             </p>
             <Button asChild size="lg" className="text-white" style={{ background: "linear-gradient(to right, var(--teal), var(--deep-teal))" }}>
               <a href="tel:2815570300">

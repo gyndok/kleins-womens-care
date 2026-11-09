@@ -134,7 +134,7 @@ const Header = () => {
             </a>
           </Button>
           <Button asChild size="sm" className="bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white">
-            <Link to="/appointment">Book Appointment</Link>
+            <Link to="/appointment">Contact Office</Link>
           </Button>
         </div>
 
@@ -204,7 +204,7 @@ const Header = () => {
             </a>
           </Button>
           <Button asChild size="sm" className="w-full mt-2 bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white">
-            <Link to="/appointment" onClick={() => setMobileOpen(false)}>Book Appointment</Link>
+            <Link to="/appointment" onClick={() => setMobileOpen(false)}>Contact Office</Link>
           </Button>
         </div>
       )}

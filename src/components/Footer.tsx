@@ -25,7 +25,7 @@ const Footer = () => {
               <Link to="/weight-loss" className="block text-sm hover:text-white">Weight Loss Clinic</Link>
               <Link to="/patient-education" className="block text-sm hover:text-white">Patient Education</Link>
               <Link to="/pregnancy-calculator" className="block text-sm hover:text-white">Due Date Calculator</Link>
-              <Link to="/appointment" className="block text-sm hover:text-white">Book Appointment</Link>
+              <Link to="/appointment" className="block text-sm hover:text-white">Contact Office</Link>
               <a
                 href="https://healow.com/apps/provider/geffrey-klein-1466084"
                 target="_blank"

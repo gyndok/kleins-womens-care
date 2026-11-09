@@ -34,7 +34,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button asChild size="lg" className="bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white px-8">
-                <Link to="/appointment">Book Appointment</Link>
+                <Link to="/appointment">Contact Office</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2 border-[var(--teal)] text-[var(--teal)] hover:bg-[var(--teal)] hover:text-white px-8">
                 <Link to="/weight-loss">Weight Loss Clinic</Link>

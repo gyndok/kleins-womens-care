@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
@@ -67,34 +66,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="mt-8">
-              <p className="font-semibold text-sm uppercase tracking-wide mb-3" style={{ color: "var(--dark-olive)" }}>
-                New Patient Forms
-              </p>
-              <div className="flex flex-col gap-2">
-                {[
-                  { label: "Obesity Clinic Intake Form", href: "https://intakeq.com/new/k3r67k" },
-                  { label: "New Obstetrical Patient", href: "https://intakeq.com/new/vplnkm" },
-                  { label: "New Gyn Patient", href: "https://intakeq.com/new/6nzzu9" },
-                ].map((form) => (
-                  <a
-                    key={form.label}
-                    href={form.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm px-4 py-2 rounded-lg font-medium transition-colors"
-                    style={{
-                      backgroundColor: "rgba(98, 146, 158, 0.1)",
-                      color: "var(--deep-teal)",
-                    }}
-                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "rgba(98, 146, 158, 0.2)")}
-                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "rgba(98, 146, 158, 0.1)")}
-                  >
-                    {form.label} &rarr;
-                  </a>
-                ))}
-              </div>
-            </div>
+
           </div>
 
           {/* Map side */}

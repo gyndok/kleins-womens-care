@@ -125,17 +125,12 @@ const WeightLoss = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-xl text-center">
           <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--dark-olive)" }}>
-            Ready to Get Started?
+            Contact the Office
           </h2>
           <p className="mb-8" style={{ color: "var(--charcoal)" }}>
-            Fill out the obesity clinic intake form and our staff will contact you to schedule your first appointment.
+            For questions about your office-based weight-loss care, please call our office.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button asChild size="lg" className="bg-[var(--deep-teal)] hover:bg-[var(--teal)] text-white">
-              <a href="https://intakeq.com/new/k3r67k" target="_blank" rel="noopener noreferrer">
-                Obesity Clinic Intake Form
-              </a>
-            </Button>
             <Button asChild size="lg" variant="outline" className="border-2 border-[var(--teal)] text-[var(--teal)] hover:bg-[var(--teal)] hover:text-white">
               <a href="tel:2815570300">Call (281) 557-0300</a>
             </Button>
